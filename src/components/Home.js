@@ -7,13 +7,13 @@ function Home() {
   return (
     <section id="home">
       <h1>NOA RABIN-COHEN</h1>
-      <p>
+      <div className="sub-title">
         Full-Stack Software Engineer.
         <br />
         Experienced in JavaScript, Ruby on Rails, React and Redux.
-      </p>
-
-      <Social className="social-link" size="2x" />
+        <br />
+        <Social className="social-link" size="2x" />
+      </div>
     </section>
   );
 }

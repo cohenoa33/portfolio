@@ -1,5 +1,9 @@
 * {
   box-sizing: border-box;
+  font-family: "Lato";
+}
+a.social-link {
+  padding: 5px;
 }
 
 #home {
@@ -18,9 +22,16 @@
   color: white;
   text-align: center;
 }
+#home h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: -10px;
+}
+.sub-title {
+  width: 80%;
+}
 #about {
   background: #2b2b2b;
-  height: 700px;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
@@ -32,17 +43,41 @@
   font-size: calc(10px + 2vmin);
   color: white;
   text-align: center;
+  padding-top: 50px;
 }
-a.social-link {
-  padding: 5px;
-}
-#home h1 {
-  font-size: 3rem;
+
+#about h2 {
+  font-size: 2rem;
+  text-align: left;
+  align-self: start;
   font-weight: bold;
-  margin-top: -10px;
+  color: #7a8fbc;
+  margin: 0 auto;
 }
-.nav-link {
-  color: black;
+
+.about-text {
+  margin-top: 20px;
+  text-align: left;
+  width: 65%;
+}
+.profile {
+  float: left;
+  width: 65%;
+  display: grid;
+  margin-top: 50px;
+  grid-template-columns: 30% 70%;
+}
+.contact {
+  text-align: left;
+  width: 20em;
+  float: left;
+}
+.profile-pic {
+  margin-top: 10px;
+  text-align: left;
+  width: 10em;
+  float: left;
+  border-radius: 10px;
 }
 
 @media only screen and (max-width: 760px),
@@ -54,5 +89,13 @@ a.social-link {
     font-size: 2rem;
     font-weight: bold;
     margin-top: -10px;
+  }
+  .profile {
+    float: left;
+    width: 65%;
+    display: block;
+  }
+  #about h2 {
+    margin: 20px 0;
   }
 }
