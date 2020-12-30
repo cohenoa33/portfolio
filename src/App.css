@@ -19,7 +19,7 @@ a.social-link {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #f2f2f2;
   text-align: center;
 }
 #home h1 {
@@ -30,7 +30,8 @@ a.social-link {
 .sub-title {
   width: 80%;
 }
-#about {
+#about,
+#contact {
   background: #2b2b2b;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -41,11 +42,17 @@ a.social-link {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #f2f2f2;
   text-align: center;
   padding-top: 50px;
 }
 
+#about a,
+#contact a {
+  text-decoration: none;
+  color: #f09c60;
+  cursor: pointer;
+}
 #about h2 {
   font-size: 2rem;
   text-align: left;
@@ -78,6 +85,33 @@ a.social-link {
   width: 10em;
   float: left;
   border-radius: 10px;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #2b2b2b;
+}
+
+#navbar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.sticky {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
 }
 
 @media only screen and (max-width: 760px),
