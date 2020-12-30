@@ -1,7 +1,6 @@
 import React from "react";
 import image from "../images/profilepic.jpg";
 import Contact from "./Contact";
-import Social from "./Social";
 
 const About = () => {
   return (
@@ -24,22 +23,6 @@ const About = () => {
         <div className="profile">
           <img className="profile-pic" src={image} alt="Noa Profile Pic" />
           <Contact />
-          {/* <div className="contact">
-            <h2>Contact Details</h2>
-            <p>
-              <span>Noa Rabin-Cohen</span>
-              <br />
-              <span>Kirkland, Washington 98033</span>
-              <br />
-              <span>
-                {" "}
-                <a href="mailto: cohenoa33@gmail.com">Cohenoa33@gmail.com</a>
-              </span>
-              <br />
-              <br />
-              <Social className="social-link" size="lg" color="#7a8fbc" />
-            </p>
-          </div> */}
         </div>
       </section>
     </div>

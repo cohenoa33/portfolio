@@ -1,0 +1,114 @@
+const resume = {
+  education: [
+    {
+      school: "Flatiron School",
+      degree:
+        "Full Stack Web Development, Ruby on Rails, and JavaScript Certificate Program",
+      graduated: "October 2020",
+      location: "Seattle, WA",
+      description:
+        "Completed Flatiron School's 15-week Software Engineering boot camp, with a focus on Ruby, Ruby on Rails, JavaScript, and React. I built five projects, ranging from a Ruby-based command-line interface to my final solo project built in React/Redux with a Ruby on Rails back end.",
+    },
+    {
+      school: "The College of Management Academic Studies, Israel",
+      degree: "Bachelor's degree, Media Studies & Management ",
+      graduated: "July 2011",
+      location: "Israel",
+      description: "",
+    },
+  ],
+  work: [
+    {
+      company: "Zappa Group",
+      title: "Operations Manager | Project Manager",
+      years: "2011 - 2018",
+      location: "Israel and Remote",
+      about:
+        "The Zappa Group owns music clubs located in major cities in Israel, a production company that is responsible for local and international festivals and music events, and a ticket office that sells more than one million tickets a year for a variety of performances. Promoted into Project Manager role based on relationship management skills.",
+      job_description: [
+        {
+          title: "Operations Strategy",
+          description:
+            "Designed, planned, executed, and managed a large-scale project of an online box-office/ticketing platform website. Implement processes to ease remote working using cloud technologies. Designed and maintained company data sets.  Subsidiary eventually became one of Israel's biggest ticketing companies.",
+        },
+        {
+          title: "Project Management",
+          description:
+            "Planned and managed more than 30 project schedules, timelines, and budgets of $100k - $1M annually. Resulted in 30% growth in new projects each year.",
+        },
+        {
+          title: "Training",
+          description:
+            "Supported Representatives in troubleshooting complicated calls as well as technical support and software issues. Improved overall retention and reduced hiring costs. Managed 15 employees directly and oversaw over 100.",
+        },
+      ],
+    },
+    {
+      company: "Zappa Group",
+      title: "Ticketing Call Center Shift Lead",
+      years: "2009 - 2011",
+      location: "Tel-Aviv, Israel",
+      about:
+        "Shifted career focus to build direct customer service leadership experience, marketing, and event management experience.",
+      job_description: [
+        {
+          title: "Customer Relationship Management",
+          description:
+            "Managed and operated the VIP membership club (e.g. communications, billing, tracking membership renewal, event coordination, and data analysis). Increased new memberships by 10% monthly and improved membership retention by 5% yearly.",
+        },
+      ],
+    },
+    {
+      company: "Ankona Advertising",
+      title: "Advertising Account Executive",
+      years: "2008 - 2009",
+      location: "Tel-Aviv, Israel",
+      job_description: [
+        {
+          title: "Coordination | Advertising | Collaboration",
+          description:
+            "Coordinated high-profile corporate agency clients (such as Microsoft Israel and Office Depot Israel) Creatives and Account Executives to create marketing and advertising campaigns with budgets of $20K - $50K. Integral part of team that developed advertising for retails stores.",
+        },
+      ],
+    },
+  ],
+  skills: [
+    {
+      name: "ActiveRecord",
+    },
+    {
+      name: "AWS",
+    },
+    {
+      name: "CSS",
+    },
+    {
+      name: "HTML",
+    },
+    {
+      name: "JavaScript",
+    },
+    {
+      name: "PostgreSQL",
+    },
+    {
+      name: "React",
+    },
+    {
+      name: "Redux",
+    },
+
+    {
+      name: "Ruby on Rails",
+    },
+
+    {
+      name: "SQL",
+    },
+
+    {
+      name: "SQLite",
+    },
+  ],
+};
+export default resume;

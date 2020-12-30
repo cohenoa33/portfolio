@@ -1,7 +1,5 @@
 import React from "react";
 import Social from "./Social";
-import About from "./About";
-import { NavLink } from "react-router-dom";
 
 function Home() {
   return (

@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: "Lato";
+  font-family: "Source Sans Pro";
 }
 a.social-link {
   padding: 5px;
@@ -46,6 +46,21 @@ a.social-link {
   text-align: center;
   padding-top: 50px;
 }
+#resume {
+  background: #f2f2f2;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  line-height: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #2b2b2b;
+  text-align: center;
+  padding-top: 50px;
+}
 
 #about a,
 #contact a {
@@ -53,7 +68,8 @@ a.social-link {
   color: #f09c60;
   cursor: pointer;
 }
-#about h2 {
+#about h2,
+#resume h2 {
   font-size: 2rem;
   text-align: left;
   align-self: start;
@@ -62,7 +78,8 @@ a.social-link {
   margin: 0 auto;
 }
 
-.about-text {
+.about-text,
+.experience {
   margin-top: 20px;
   text-align: left;
   width: 65%;
@@ -72,6 +89,7 @@ a.social-link {
   width: 65%;
   display: grid;
   margin-top: 50px;
+  margin-bottom: 50px;
   grid-template-columns: 30% 70%;
 }
 .contact {
@@ -86,7 +104,36 @@ a.social-link {
   float: left;
   border-radius: 10px;
 }
-
+.roles-experience {
+  line-height: 1.15em;
+  display: block;
+}
+.roles-experience span {
+  font-weight: bold;
+  padding-top: 25px;
+  display: block;
+  font-size: 1.1em;
+}
+.roles-experience-about {
+  padding-right: 25px;
+  display: block;
+  font-size: 0.9em;
+  line-height: 1.3em;
+}
+span.title {
+  font-size: 100%;
+  font: inherit;
+  color: #7a8fbc;
+  font-size: 0.9em;
+  line-height: 1.3em;
+  padding: 0;
+}
+span.description {
+  font-size: 0.9em;
+  font-weight: lighter;
+  padding: 0;
+  line-height: 1.3em;
+}
 #navbar {
   overflow: hidden;
   background-color: #2b2b2b;
