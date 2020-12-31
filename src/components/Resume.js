@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../resume";
+import information from "../information";
 
 const Resume = () => {
   return (
@@ -8,12 +8,12 @@ const Resume = () => {
         <div className="experience">
           <h2>TECHNICAL SKILLS </h2>
           <ul>
-            {resume.skills.map((skill) => (
+            {information.skills.map((skill) => (
               <li key={skill.name}>{skill.name}</li>
             ))}
           </ul>
           <h2>EDUCATION</h2>
-          {resume.education.map((school) => (
+          {information.education.map((school) => (
             <div className="roles-experience" key={school.school}>
               <span>{school.school}</span>
               <p>
@@ -25,7 +25,7 @@ const Resume = () => {
           ))}
           <br />
           <h2>PROFESSIONAL EXPERIENCE</h2>
-          {resume.work.map((work) => (
+          {information.work.map((work) => (
             <div className="roles-experience" key={work.title}>
               <span>{work.title}</span>
               <p>
@@ -33,19 +33,21 @@ const Resume = () => {
               </p>
               <p className="roles-experience-about">{work.about}</p>
 
-              {work.job_description.map((role) => (
-                <>
+              {work.job_description.map((role, index) => (
+                <div key={role.title}>
                   <span className="title">{role.title}:</span>{" "}
                   <span className="description">{role.description}</span>
-                </>
+                </div>
               ))}
               <br />
             </div>
           ))}
           <br />
-
-          <a herf="" target="_blank" download>
-            Check my resume on PDF{" "}
+          <a
+            href="https://bit.ly/2WZsfTy"
+            download="Noa-Rabin-Cohen-Software-Engineer.pdf"
+          >
+            Version to download
           </a>
         </div>
       </section>

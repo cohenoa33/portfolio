@@ -1,6 +1,25 @@
 * {
   box-sizing: border-box;
   font-family: "Source Sans Pro";
+  font-size: 1rem;
+}
+.video {
+  position: relative;
+  height: 0;
+  padding-top: 25;
+  padding-bottom: 56.25%;
+  align-content: center;
+  align-self: center;
+  margin: 0 auto;
+  max-width: 688px;
+}
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-self: center;
+  width: 100%;
+  height: 100%;
 }
 a.social-link {
   padding: 5px;
@@ -31,11 +50,8 @@ a.social-link {
   width: 80%;
 }
 #about,
-#contact {
+#resume {
   background: #2b2b2b;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
   line-height: 2em;
   display: flex;
   flex-direction: column;
@@ -46,11 +62,21 @@ a.social-link {
   text-align: center;
   padding-top: 50px;
 }
-#resume {
+
+#contact {
   background: #f2f2f2;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  line-height: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  font-size: calc(10px + 2vmin);
+  color: #2b2b2b;
+  text-align: center;
+  padding-top: 50px;
+}
+#projects {
+  background: #f2f2f2;
   line-height: 2em;
   display: flex;
   flex-direction: column;
@@ -59,7 +85,7 @@ a.social-link {
   font-size: calc(10px + 2vmin);
   color: #2b2b2b;
   text-align: center;
-  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 #about a,
@@ -68,6 +94,7 @@ a.social-link {
   color: #f09c60;
   cursor: pointer;
 }
+
 #about h2,
 #resume h2 {
   font-size: 2rem;
@@ -76,6 +103,22 @@ a.social-link {
   font-weight: bold;
   color: #7a8fbc;
   margin: 0 auto;
+}
+#projects h2 {
+  font-size: 2rem;
+  text-align: center;
+  align-self: start;
+  font-weight: bold;
+  color: #7a8fbc;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+#projects li {
+  line-height: 1.25rem;
+  text-align: left;
+  width: 500px;
+  margin: auto;
+  padding-top: -15px;
 }
 
 .about-text,
@@ -103,6 +146,22 @@ a.social-link {
   width: 10em;
   float: left;
   border-radius: 10px;
+}
+h3.title {
+  margin-top: 15px;
+  color: #7a8fbc;
+}
+.project-div {
+  border-bottom: 1px dashed #2b2b2b;
+  padding-bottom: 20px;
+}
+.github,
+.github:visited,
+.github:hover {
+  text-decoration: none;
+  cursor: pointer;
+  padding-top: 0;
+  margin-top: 0;
 }
 .roles-experience {
   line-height: 1.15em;
@@ -163,6 +222,29 @@ span.description {
 
 @media only screen and (max-width: 760px),
   (min-device-width: 768px) and (max-device-width: 1024px) {
+  #about,
+  #resume,
+  #projects,
+  #home {
+    width: 100%;
+  }
+  .video {
+    position: relative;
+    height: 0;
+    padding-top: 25;
+    padding-bottom: 56.25%;
+    align-content: center;
+    align-self: center;
+    margin: 0 auto;
+  }
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+  }
   #home {
     height: 500px;
   }
@@ -178,5 +260,17 @@ span.description {
   }
   #about h2 {
     margin: 20px 0;
+  }
+
+  #projects h2 {
+    text-align: center;
+  }
+
+  #projects li {
+    line-height: 1.25rem;
+    text-align: left;
+    margin: auto;
+    padding-top: -15px;
+    width: 80%;
   }
 }

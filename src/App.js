@@ -6,6 +6,7 @@ import About from "./components/About";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
+import Projects from "./components/Projects";
 
 class App extends React.Component {
   render() {
@@ -15,6 +16,7 @@ class App extends React.Component {
           <div id="navbar" className="sticky">
             <a href="#home">Home</a>
             <a href="#about">About</a>
+            <a href="#projects">Projects</a>
             <a href="#resume">Resume</a>
             <a href="#contact">Contact</a>
           </div>
@@ -22,6 +24,7 @@ class App extends React.Component {
           <div className="App">
             <Home />
             <About />
+            <Projects />
             <Resume />
             <Contact section="contact" />
           </div>

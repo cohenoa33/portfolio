@@ -1,4 +1,4 @@
-const resume = {
+const information = {
   education: [
     {
       school: "Flatiron School",
@@ -110,5 +110,53 @@ const resume = {
       name: "SQLite",
     },
   ],
+
+  projects: [
+    {
+      name: "FollowDoc",
+      github: "https://github.com/cohenoa33/follow-doc-frontend",
+      youtube: "https://youtu.be/RfApZrbvUic",
+      demo: "RfApZrbvUic",
+      description: [
+        "Developed and designed React application to help the user keep track of medical issues and doctor appointments.",
+        "Built complex Rails API backend with PostgreSQL using JSON Web Token (JWT) and Bcrypt to establish relationships between users, appointments, and doctors.",
+        "Utilized ActiveStorage and AWS to store user files and Google Maps API to display appointment locations.",
+        "Created and designed user interface using React and Redux, and CSS for styling.",
+      ],
+    },
+    {
+      name: "QPQ",
+      github: "https://github.com/cohenoa33/qpq-frontend",
+      youtube: "https://youtu.be/rYNZHStJLsk",
+      demo: "rYNZHStJLsk",
+      description: [
+        "Collaborated with three engineers to build React web application allowing users to trade services.",
+        "Developed Rails API and PostgreSQL backend with endpoints for users and services.",
+        "Produced React Js frontend with CSS to display services information.",
+      ],
+    },
+    {
+      name: "What Should We Do",
+      github: "https://github.com/cohenoa33/what-should-we-do-frontend",
+      youtube: "https://youtu.be/ewwRIRbCr8w",
+      demo: "ewwRIRbCr8w",
+      description: [
+        "Created an activity journal to helps users log everywhere they visit and add reviews for those places.",
+        "Built a single page application with HTML, CSS, and vanilla JavaScript.",
+        "Generated Rails API backend to track activities and users.",
+      ],
+    },
+    {
+      name: "Favfest",
+      github: "https://github.com/cohenoa33/favfest",
+      youtube: "https://youtu.be/VXQRUEcJHs0",
+      demo: "VXQRUEcJHs0",
+      description: [
+        "Built Rails Application provides users with information about music festivals, allowing an interactive diary.",
+        "Utilized MVC structure and RESTful conventions, HTML Forms, ActiveRecord Models, and Relationship using Postgres Database. Added custom validations to increase security.",
+        "Embedded seeded YouTube links that rendered fully interactive videos on rendered pages.",
+      ],
+    },
+  ],
 };
-export default resume;
+export default information;
