@@ -21,8 +21,13 @@ iframe {
   width: 100%;
   height: 100%;
 }
-a.social-link {
-  padding: 5px;
+
+a.social-link,
+a.social-link-home {
+  padding-right: 10px;
+}
+.social-link-home {
+  padding-top: 50px;
 }
 
 #home {
@@ -45,9 +50,11 @@ a.social-link {
   font-size: 3rem;
   font-weight: bold;
   margin-top: -10px;
+  margin-bottom: 0px;
 }
-.sub-title {
-  width: 80%;
+#home h2 {
+  font-size: 2rem;
+  font-weight: bold;
 }
 #about,
 #resume {
@@ -86,6 +93,7 @@ a.social-link {
   color: #2b2b2b;
   text-align: center;
   padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 #about a,
@@ -103,6 +111,7 @@ a.social-link {
   font-weight: bold;
   color: #7a8fbc;
   margin: 0 auto;
+  padding-top: 20px;
 }
 #projects h2 {
   font-size: 2rem;
@@ -120,20 +129,40 @@ a.social-link {
   margin: auto;
   padding-top: -15px;
 }
+.skills {
+  padding-top: 0px;
+  text-decoration: none;
+  padding-left: 0px;
+}
+li.skills-item {
+  margin-bottom: -20px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.about-text {
+  width: 65%;
+  background-color: #2b2b2b;
+  padding: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+  line-height: 1.5rem;
+}
 
-.about-text,
 .experience {
   margin-top: 20px;
+  margin: 0 auto;
   text-align: left;
-  width: 65%;
+  width: 55%;
 }
 .profile {
+  display: none;
+  /* margin-top: 50px;
+  margin-bottom: 50px;
   float: left;
   width: 65%;
   display: grid;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 30% 70%; */
 }
 .contact {
   text-align: left;
@@ -162,6 +191,7 @@ h3.title {
   cursor: pointer;
   padding-top: 0;
   margin-top: 0;
+  color: darkgrey;
 }
 .roles-experience {
   line-height: 1.15em;
@@ -169,9 +199,10 @@ h3.title {
 }
 .roles-experience span {
   font-weight: bold;
-  padding-top: 25px;
+  padding-top: 15px;
   display: block;
   font-size: 1.1em;
+  color: #46b1a7;
 }
 .roles-experience-about {
   padding-right: 25px;
@@ -192,41 +223,43 @@ span.description {
   font-weight: lighter;
   padding: 0;
   line-height: 1.3em;
+  color: #f2f2f2;
 }
+
 #navbar {
-  overflow: hidden;
   background-color: #2b2b2b;
-}
-
-#navbar a {
-  display: block;
-  text-align: center;
-  padding: 16px;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 20px;
-}
-
-.sticky {
   position: fixed;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  top: -50px;
+  width: 100%;
+  transition: top 0.3s;
+  z-index: 1;
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
+/* Style the navbar links */
+#navbar a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  background-color: #f2f2f2;
+  color: #2b2b2b;
 }
 
 @media only screen and (max-width: 760px),
   (min-device-width: 768px) and (max-device-width: 1024px) {
+  .App {
+    width: 110%;
+  }
   #about,
   #resume,
   #projects,
   #home {
     width: 100%;
+    height: auto;
   }
   .video {
     position: relative;
@@ -245,18 +278,23 @@ span.description {
     width: 100%;
     height: 100%;
   }
-  #home {
-    height: 500px;
-  }
+
   #home h1 {
+    padding-top: 100px;
     font-size: 2rem;
     font-weight: bold;
-    margin-top: -10px;
+  }
+  #home h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
   }
   .profile {
     float: left;
     width: 65%;
     display: block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    grid-template-columns: 30% 70%;
   }
   #about h2 {
     margin: 20px 0;
@@ -272,5 +310,17 @@ span.description {
     margin: auto;
     padding-top: -15px;
     width: 80%;
+  }
+  .experience {
+    width: 85%;
+  }
+  .about-text {
+    width: 65%;
+    background-color: #2b2b2b;
+    padding: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+    line-height: 1.5rem;
   }
 }

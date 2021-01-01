@@ -10,7 +10,7 @@ export default function Social({ className, size, color }) {
   if (!color) color = "white";
   return (
     <>
-      <span>
+      <span className={className}>
         <a
           className={className}
           href="https://github.com/cohenoa33"

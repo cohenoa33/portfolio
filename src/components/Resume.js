@@ -3,13 +3,15 @@ import information from "../information";
 
 const Resume = () => {
   return (
-    <div className="resume">
+    <>
       <section id="resume">
         <div className="experience">
           <h2>TECHNICAL SKILLS </h2>
-          <ul>
+          <ul className="skills">
             {information.skills.map((skill) => (
-              <li key={skill.name}>{skill.name}</li>
+              <li className="skills-item" key={skill.name}>
+                • {skill.name}
+              </li>
             ))}
           </ul>
           <h2>EDUCATION</h2>
@@ -23,7 +25,6 @@ const Resume = () => {
               <br />
             </div>
           ))}
-          <br />
           <h2>PROFESSIONAL EXPERIENCE</h2>
           {information.work.map((work) => (
             <div className="roles-experience" key={work.title}>
@@ -43,15 +44,9 @@ const Resume = () => {
             </div>
           ))}
           <br />
-          <a
-            href="https://bit.ly/2WZsfTy"
-            download="Noa-Rabin-Cohen-Software-Engineer.pdf"
-          >
-            Version to download
-          </a>
         </div>
       </section>
-    </div>
+    </>
   );
 };
 

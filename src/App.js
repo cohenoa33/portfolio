@@ -2,28 +2,43 @@ import React from "react";
 import "./App.css";
 import { HashRouter } from "react-router-dom";
 
-import About from "./components/About";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
 import Projects from "./components/Projects";
 
 class App extends React.Component {
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+  handleScroll() {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-50px";
+    }
+  }
+
   render() {
     return (
       <HashRouter>
         <div>
-          <div id="navbar" className="sticky">
+          <div id="navbar">
             <a href="#home">Home</a>
-            <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#resume">Resume</a>
             <a href="#contact">Contact</a>
           </div>
-
           <div className="App">
             <Home />
-            <About />
+
             <Projects />
             <Resume />
             <Contact section="contact" />

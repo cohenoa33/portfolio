@@ -15,7 +15,6 @@ const Contact = ({ section }) => {
           <a href="mailto: cohenoa33@gmail.com">Cohenoa33@gmail.com</a>
         </span>
         <br />
-        <br />
         <Social className="social-link" size="lg" color="#7a8fbc" />
       </p>
     </div>
