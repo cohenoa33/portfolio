@@ -6,7 +6,7 @@ const Contact = ({ section }) => {
     <div className="contact">
       <h2>Contact Details</h2>
       <p>
-        <span>Noa Rabin-Cohen</span>
+        <span>Noa Rabin - Cohen</span>
         <br />
         <span>Kirkland, Washington 98033</span>
         <br />

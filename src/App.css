@@ -72,7 +72,7 @@ a.social-link-home {
 
 #contact {
   background: #f2f2f2;
-  line-height: 1.5em;
+  line-height: 1.15em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,6 +81,7 @@ a.social-link-home {
   color: #2b2b2b;
   text-align: center;
   padding-top: 50px;
+  padding-left: -30%;
 }
 #projects {
   background: #f2f2f2;
@@ -106,12 +107,16 @@ a.social-link-home {
 #about h2,
 #resume h2 {
   font-size: 2rem;
-  text-align: left;
-  align-self: start;
   font-weight: bold;
-  color: #7a8fbc;
+  color: lightgrey;
+  /* text-decoration: underline dashed 1px lightgrey;
+  text-underline-position: under; */
+  /* text-align: left;
+  align-self: start;
   margin: 0 auto;
   padding-top: 20px;
+  border-bottom: underline dotted 1px;
+  padding-bottom: 3px; */
 }
 #projects h2 {
   font-size: 2rem;
@@ -155,6 +160,12 @@ li.skills-item {
   text-align: left;
   width: 55%;
 }
+.contact {
+  margin-top: 20px;
+  margin: 0 auto;
+  text-align: left;
+  width: 55%;
+}
 .profile {
   display: none;
   /* margin-top: 50px;
@@ -164,11 +175,7 @@ li.skills-item {
   display: grid;
   grid-template-columns: 30% 70%; */
 }
-.contact {
-  text-align: left;
-  width: 20em;
-  float: left;
-}
+
 .profile-pic {
   margin-top: 10px;
   text-align: left;
@@ -196,27 +203,32 @@ h3.title {
 .roles-experience {
   line-height: 1.15em;
   display: block;
+  border-bottom: 1px dotted #f2f2f2;
+  padding-bottom: 3px;
 }
+
 .roles-experience span {
   font-weight: bold;
   padding-top: 15px;
   display: block;
   font-size: 1.1em;
-  color: #46b1a7;
+  /* color: rgb(0, 157, 115); */
 }
 .roles-experience-about {
   padding-right: 25px;
+
   display: block;
-  font-size: 0.9em;
+  font-size: 0.87em;
   line-height: 1.3em;
 }
 span.title {
-  font-size: 100%;
+  /* font-size: 100%; */
   font: inherit;
-  color: #7a8fbc;
+  color: darkgrey;
   font-size: 0.9em;
   line-height: 1.3em;
   padding: 0;
+  font-weight: bold;
 }
 span.description {
   font-size: 0.9em;
@@ -257,10 +269,12 @@ span.description {
   #about,
   #resume,
   #projects,
+  #contact,
   #home {
     width: 100%;
     height: auto;
   }
+
   .video {
     position: relative;
     height: 0;

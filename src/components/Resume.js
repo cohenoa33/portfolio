@@ -36,7 +36,7 @@ const Resume = () => {
 
               {work.job_description.map((role, index) => (
                 <div key={role.title}>
-                  <span className="title">{role.title}:</span>{" "}
+                  <span className="title">• {role.title}:</span>{" "}
                   <span className="description">{role.description}</span>
                 </div>
               ))}
