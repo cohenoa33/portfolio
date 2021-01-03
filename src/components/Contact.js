@@ -12,7 +12,7 @@ const Contact = ({ section }) => {
         <br />
         <span>
           {" "}
-          <a href="mailto: cohenoa33@gmail.com">Cohenoa33@gmail.com</a>
+          <a href="mailto: me@noarabincohen.com">me@noarabincohen.com</a>
         </span>
         <br />
         <Social className="social-link" size="lg" color="#7a8fbc" />
