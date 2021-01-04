@@ -16,9 +16,29 @@ export default function Projects() {
                 frameBorder="0"
               />
             </div>
-            <a target="_blank" className="github" href={project.github}>
-              GitHub
-            </a>
+            <div className="github-heroku">
+              <a
+                target="_blank"
+                className="github"
+                href={project.github}
+                rel="noreferrer"
+              >
+                GitHub
+              </a>
+              <br />
+
+              {project.heroku ? (
+                <a
+                  target="_blank"
+                  className="heroku"
+                  href={project.heroku}
+                  rel="noreferrer"
+                >
+                  Heroku
+                </a>
+              ) : null}
+            </div>
+
             {project.description.map((value) => (
               <li key={value}>{value}</li>
             ))}

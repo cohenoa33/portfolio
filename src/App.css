@@ -144,12 +144,19 @@ li.skills-item {
   display: inline-block;
   margin-right: 10px;
 }
+.about {
+  width: 60%;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  float: center;
+  background-color: #2b2b2b;
+}
 .about-text {
-  width: 65%;
+  width: 90%;
   background-color: #2b2b2b;
   padding: 50px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
   line-height: 1.5rem;
 }
@@ -178,10 +185,9 @@ li.skills-item {
 
 .profile-pic {
   margin-top: 10px;
+  padding: 50px 20px 50px 10px;
   text-align: left;
-  width: 10em;
-  float: left;
-  border-radius: 10px;
+  width: 100%;
 }
 h3.title {
   margin-top: 15px;
@@ -191,14 +197,31 @@ h3.title {
   border-bottom: 1px dashed #2b2b2b;
   padding-bottom: 20px;
 }
+.github-heroku {
+  display: inline-flex;
+  margin: 0 auto;
+}
 .github,
 .github:visited,
 .github:hover {
-  text-decoration: none;
+  /* text-decoration: none; */
   cursor: pointer;
   padding-top: 0;
   margin-top: 0;
+  margin: 0 auto;
   color: darkgrey;
+  text-align: center;
+}
+.heroku,
+.heroku:visited,
+.heroku:hover {
+  /* text-decoration: none; */
+  cursor: pointer;
+  padding-top: 0;
+  margin-top: 0;
+  margin-left: 5px;
+  color: darkgrey;
+  text-align: center;
 }
 .roles-experience {
   line-height: 1.15em;
@@ -271,10 +294,18 @@ span.description {
   #projects,
   #contact,
   #home {
-    width: 100%;
+    width: 90%;
     height: auto;
   }
-
+  .about {
+    display: block;
+    width: 90%;
+  }
+  .profile-pic {
+    margin-top: 10px;
+    width: 80%;
+    max-width: 300px;
+  }
   .video {
     position: relative;
     height: 0;
@@ -329,7 +360,7 @@ span.description {
     width: 85%;
   }
   .about-text {
-    width: 65%;
+    width: 100%;
     background-color: #2b2b2b;
     padding: 20px;
     padding-left: 10px;

@@ -150,6 +150,7 @@ const information = {
       name: "Favfest",
       github: "https://github.com/cohenoa33/favfest",
       youtube: "https://youtu.be/VXQRUEcJHs0",
+      heroku: "https://favfest.herokuapp.com/",
       demo: "VXQRUEcJHs0",
       description: [
         "Built Rails Application provides users with information about music festivals, allowing an interactive diary.",
