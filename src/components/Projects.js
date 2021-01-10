@@ -37,6 +37,16 @@ export default function Projects() {
                   Heroku
                 </a>
               ) : null}
+              {project.surge ? (
+                <a
+                  target="_blank"
+                  className="heroku"
+                  href={project.surge}
+                  rel="noreferrer"
+                >
+                  Surge
+                </a>
+              ) : null}
             </div>
 
             {project.description.map((value) => (
