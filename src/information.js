@@ -128,6 +128,7 @@ const information = {
       name: "QPQ",
       github: "https://github.com/cohenoa33/qpq-frontend",
       youtube: "https://youtu.be/rYNZHStJLsk",
+      heroku: "https://qpq-client.herokuapp.com/",
       demo: "rYNZHStJLsk",
       description: [
         "Collaborated with three engineers to build React web application allowing users to trade services.",
