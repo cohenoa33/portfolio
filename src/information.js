@@ -117,7 +117,7 @@ const information = {
       github: "https://github.com/cohenoa33/follow-doc-frontend",
       youtube: "https://youtu.be/RfApZrbvUic",
       demo: "RfApZrbvUic",
-      surge: "http://follow-doc.surge.sh/",
+      surge: "https://follow-doc.surge.sh/",
       description: [
         "Developed and designed React application to help the user keep track of medical issues and doctor appointments.",
         "Built complex Rails API backend with PostgreSQL using JSON Web Token (JWT) and Bcrypt to establish relationships between users, appointments, and doctors.",
@@ -141,6 +141,7 @@ const information = {
       name: "What Should We Do",
       github: "https://github.com/cohenoa33/what-should-we-do-frontend",
       youtube: "https://youtu.be/ewwRIRbCr8w",
+      surge: "https://what-sholud-we-do.surge.sh/",
       demo: "ewwRIRbCr8w",
       description: [
         "Created an activity journal to helps users log everywhere they visit and add reviews for those places.",
