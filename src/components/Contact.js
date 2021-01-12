@@ -6,17 +6,19 @@ const Contact = ({ section }) => {
     <div className="contact">
       <h2>Contact Details</h2>
       <div className="contact-details">
-        <span>Noa Rabin - Cohen</span>
+        <span className="details">Noa Rabin - Cohen</span>
         <br />
-        <span>Kirkland, Washington 98033</span>
+        <span className="details"> Kirkland, Washington 98033</span>
         <br />
         <span>
           {" "}
-          <a href="mailto: me@noarabincohen.com">me@noarabincohen.com</a>
+          <a href="mailto: me@noarabincohen.com" className="details">
+            me@noarabincohen.com
+          </a>
         </span>
         <br />
         <p className="contact-social">
-          <Social className="social-link" size="lg" color="#2b2b2b" />
+          <Social className="social-link" size="2x" color="#2b2b2b" />
         </p>
       </div>
     </div>

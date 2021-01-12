@@ -280,6 +280,19 @@ i {
 }
 .contact-social {
   margin-top: 20px;
+  font-size: 20px;
+}
+a.contact-social {
+  margin-top: 20px;
+  font-size: 50px;
+}
+.details {
+  font-size: 1.15rem;
+  line-height: 1.5rem;
+}
+
+a.details {
+  font-size: 1.25rem;
 }
 
 #navbar {
@@ -308,14 +321,14 @@ i {
 @media only screen and (max-width: 760px),
   (min-device-width: 768px) and (max-device-width: 1024px) {
   .App {
-    width: 110%;
+    width: 100%;
   }
   #about,
   #resume,
   #projects,
   #contact,
   #home {
-    width: 90%;
+    /* width: 90%; */
     height: auto;
   }
 
@@ -363,6 +376,7 @@ i {
     margin-bottom: 50px;
     grid-template-columns: 30% 70%;
   }
+  #contact h2,
   #about h2 {
     margin: 20px 0;
     color: #7a8fbc;
@@ -379,6 +393,12 @@ i {
     padding-top: -15px;
     width: 80%;
   }
+  .contact-details {
+    padding-top: 0;
+    line-height: 1.25rem;
+    font-size: 2em;
+  }
+
   .experience {
     width: 85%;
   }
