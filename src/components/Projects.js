@@ -48,10 +48,11 @@ export default function Projects() {
                 </a>
               ) : null}
             </div>
-
-            {project.description.map((value) => (
-              <li key={value}>{value}</li>
-            ))}
+            <ul className="project-description">
+              {project.description.map((value) => (
+                <li key={value}>{value}</li>
+              ))}
+            </ul>
           </div>
         ))}
       </section>

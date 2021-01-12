@@ -22,6 +22,7 @@ function Home() {
 
         <img src={image} className="profile-pic" alt="Profile" />
       </div>
+
       <Social className="social-link-home" size="2x" />
     </section>
   );

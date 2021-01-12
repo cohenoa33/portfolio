@@ -44,6 +44,20 @@ const Resume = () => {
             </div>
           ))}
           <br />
+          <div className="download">
+            <a
+              className="download"
+              href="https://drive.google.com/file/d/1qFWalVogEK69uTJG87vzx2jHRuWKd9DU/view"
+              rel="noreferrer"
+              target="_blank"
+              download
+            >
+              {" "}
+              Download PDF
+              <i className="fa fa-download"> </i>
+            </a>
+            <br />
+          </div>
         </div>
       </section>
     </>
