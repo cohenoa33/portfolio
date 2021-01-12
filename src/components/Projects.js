@@ -34,7 +34,7 @@ export default function Projects() {
                   href={project.heroku}
                   rel="noreferrer"
                 >
-                  Heroku
+                  Live App
                 </a>
               ) : null}
               {project.surge ? (
@@ -44,7 +44,7 @@ export default function Projects() {
                   href={project.surge}
                   rel="noreferrer"
                 >
-                  Surge
+                  Live App
                 </a>
               ) : null}
             </div>
