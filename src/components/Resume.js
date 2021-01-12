@@ -47,7 +47,7 @@ const Resume = () => {
           <div className="download">
             <a
               className="download"
-              href="https://drive.google.com/file/d/1qFWalVogEK69uTJG87vzx2jHRuWKd9DU/view"
+              href="https://1drv.ms/b/s!AqSCQUSQABe5kVNPSNQmN67Uy8A5"
               rel="noreferrer"
               target="_blank"
               download
