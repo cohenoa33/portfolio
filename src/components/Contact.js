@@ -1,5 +1,4 @@
 import React from "react";
-import Social from "./Social";
 
 const Contact = ({ section }) => {
   let contact = (
@@ -17,9 +16,6 @@ const Contact = ({ section }) => {
           </a>
         </span>
         <br />
-        {/* <p className="contact-social">
-          <Social className="social-link" size="2x" color="white" />
-        </p> */}
       </div>
     </div>
   );

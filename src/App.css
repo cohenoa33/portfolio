@@ -47,8 +47,12 @@ ul#social-menu {
   list-style: none;
 }
 svg {
-  color: aquamarine;
+  color: rgb(5, 151, 230);
   margin-top: 10px;
+  border-radius: 5px;
+}
+svg:hover {
+  color: aquamarine;
 }
 
 #about {
@@ -338,14 +342,6 @@ span.description {
   color: aquamarine;
   cursor: pointer;
 }
-
-/* i {
-  margin-left: 5px;
-}
-.contact-social {
-  margin-top: 20px;
-  font-size: 20px;
-} */
 
 @media only screen and (max-width: 760px),
   (min-device-width: 768px) and (max-device-width: 1024px) {

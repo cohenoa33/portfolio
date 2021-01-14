@@ -10,35 +10,32 @@ export default function Social() {
   const size = "2x";
   const color = "#f2f2f2";
   return (
-    <>
+    <div>
       <ul id="social-menu">
-        <li className="social-menu">
-          <a
-            href="https://github.com/cohenoa33"
-            target="_blank"
-            rel="noreferrer"
-          >
+        <a href="https://github.com/cohenoa33" target="_blank" rel="noreferrer">
+          <li className="social-menu">
             <FontAwesomeIcon icon={faGithub} size={size} color={color} />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/noa-rabin-cohen"
-            target="_blank"
-            rel="noreferrer"
-          >
+          </li>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/noa-rabin-cohen"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <li className="social-menu">
             <FontAwesomeIcon icon={faLinkedin} size={size} color={color} />
-          </a>
-          <li></li>
-          <a
-            href="https://cohenoa33.medium.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
+          </li>
+        </a>
+        <a
+          href="https://cohenoa33.medium.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <li className="social-menu">
             <FontAwesomeIcon icon={faMedium} size={size} color={color} />
-          </a>
-        </li>
+          </li>
+        </a>
       </ul>
-    </>
+    </div>
   );
 }
