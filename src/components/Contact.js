@@ -4,11 +4,11 @@ import Social from "./Social";
 const Contact = ({ section }) => {
   let contact = (
     <div className="contact">
-      <h2>Contact Details</h2>
+      <h2>Contact Me</h2>
       <div className="contact-details">
-        <span className="details">Noa Rabin - Cohen</span>
+        <span className="details">Noa Rabin-Cohen</span>
         <br />
-        <span className="details"> Kirkland, Washington 98033</span>
+        <span className="details">Kirkland, Washington 98033</span>
         <br />
         <span>
           {" "}
@@ -18,7 +18,7 @@ const Contact = ({ section }) => {
         </span>
         <br />
         <p className="contact-social">
-          <Social className="social-link" size="2x" color="#2b2b2b" />
+          <Social className="social-link" size="2x" color="white" />
         </p>
       </div>
     </div>

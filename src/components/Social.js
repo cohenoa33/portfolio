@@ -10,34 +10,34 @@ export default function Social({ className, size, color }) {
   if (!color) color = "white";
   return (
     <>
-      <span className={className}>
-        <a
-          className={className}
-          href="https://github.com/cohenoa33"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FontAwesomeIcon icon={faGithub} size={size} color={color} />
-        </a>
-        {""}
-        <a
-          className={className}
-          href="https://www.linkedin.com/in/noa-rabin-cohen"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FontAwesomeIcon icon={faLinkedin} size={size} color={color} />
-        </a>
-        {""}
-        <a
-          className={className}
-          href="https://cohenoa33.medium.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FontAwesomeIcon icon={faMedium} size={size} color={color} />
-        </a>
-      </span>
+      {/* <span className={className}> */}
+      <a
+        className={className}
+        href="https://github.com/cohenoa33"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <FontAwesomeIcon icon={faGithub} size={size} color={color} />
+      </a>
+      {""}
+      <a
+        className={className}
+        href="https://www.linkedin.com/in/noa-rabin-cohen"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <FontAwesomeIcon icon={faLinkedin} size={size} color={color} />
+      </a>
+      {""}
+      <a
+        className={className}
+        href="https://cohenoa33.medium.com/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <FontAwesomeIcon icon={faMedium} size={size} color={color} />
+      </a>
+      {/* </span> */}
     </>
   );
 }
