@@ -2,19 +2,21 @@
   box-sizing: border-box;
   font-family: "Inconsolata";
 }
+.App {
+  background-image: linear-gradient(to right, rgb(53, 53, 53), rgb(93, 93, 93));
+  box-shadow: inset 0 0 50px rgb(104, 104, 104);
+}
 #navbar {
   background-color: #2b2b2b;
   position: fixed;
   top: -0;
   width: 100%;
-  /* transition: top 0.3s; */
   z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Style the navbar links */
 #navbar a {
   display: inline-block;
   color: #f2f2f2;
@@ -31,6 +33,9 @@ svg:hover {
   background-color: #f2f2f2;
   color: #2b2b2b;
 }
+a.social-link {
+  padding-right: 10px;
+}
 #about {
   /*background: #2b2b2b;
   background-image: url("images/header-background.jpg");
@@ -38,8 +43,8 @@ svg:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; */
-  background-image: linear-gradient(to right, rgb(53, 53, 53), rgb(93, 93, 93));
-  box-shadow: inset 0 0 50px rgb(104, 104, 104);
+  /* background-image: linear-gradient(to right, rgb(53, 53, 53), rgb(93, 93, 93));
+  box-shadow: inset 0 0 50px rgb(104, 104, 104); */
   min-height: 800px;
   display: flex;
   flex-direction: column;
@@ -83,19 +88,41 @@ svg:hover {
 }
 
 #projects {
-  background: #f2f2f2;
   line-height: 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: #2b2b2b;
   text-align: center;
   padding-bottom: 50px;
   padding-top: 50px;
+  color: #c9c9c9;
 }
-/* I'm here */
+#skills h2,
+#projects h2 {
+  font-weight: bold;
+  margin: 0 auto;
+  font-size: 2.75rem;
+  margin-bottom: 0px;
+  color: rgb(179, 178, 178);
+}
+.project-div {
+  border-bottom: 1px dashed #c9c9c9;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.project-div:last-child {
+  border-bottom: none;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+h3.title {
+  margin: 5px 0 5px;
+  font-size: 1.75rem;
+  color: white;
+}
+
 .video {
   position: relative;
   height: 0;
@@ -114,10 +141,47 @@ iframe {
   width: 100%;
   height: 100%;
 }
-
-a.social-link {
-  padding-right: 10px;
+.github-live {
+  display: inline-flex;
+  margin: 0 auto;
 }
+
+.github,
+.github:visited,
+.github:hover {
+  /* text-decoration: none; */
+  cursor: pointer;
+  padding-top: 0;
+  margin-top: 0;
+  margin: 0 auto;
+  color: darkgrey;
+  text-align: center;
+}
+.live,
+.live:visited,
+.live:hover {
+  /* text-decoration: none; */
+  cursor: pointer;
+  padding-top: 0;
+  margin-top: 0;
+  margin-left: 5px;
+  color: darkgrey;
+  text-align: center;
+}
+
+#projects li {
+  line-height: 1.25rem;
+  text-align: left;
+  width: 500px;
+  margin: 0 auto;
+  padding-top: -15px;
+  color: white;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  text-align: justify;
+}
+
+/* I'm here */
 
 .download {
   display: block;
@@ -132,14 +196,41 @@ a.download {
   font-size: 1.2em;
 }
 
-#resume {
-  background: #2b2b2b;
+#skills {
   line-height: 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  color: #f2f2f2;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.skills {
+  padding-top: 0px;
+  padding-left: 10px;
+  line-height: 1.15em;
+  font-weight: bold;
+  font-size: 1.75em;
+  max-width: 70%;
+  overflow: auto; /* similar to clearing the floats... */
+}
+.skills-item {
+  margin-bottom: -10px;
+  margin-left: 10px;
+  float: left;
+  padding: 10px;
+  margin: 0 10px;
+  list-style: square inside;
+}
+
+#resume {
+  line-height: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: #f2f2f2;
   text-align: center;
   padding-top: 50px;
@@ -173,33 +264,6 @@ a.download {
   color: #7a8fbc;
   margin-bottom: -10px;
 }
-#projects h2 {
-  font-size: 2rem;
-  text-align: center;
-  align-self: start;
-  font-weight: bold;
-  color: #7a8fbc;
-  margin: 0 auto;
-}
-#projects li {
-  line-height: 1.25rem;
-  text-align: left;
-  width: 500px;
-  margin: auto;
-  padding-top: -15px;
-}
-.skills {
-  padding-top: 0px;
-  padding-left: 0px;
-  line-height: 1.15em;
-  font-weight: bold;
-  font-size: 1.15em;
-}
-li.skills-item {
-  margin-bottom: -20px;
-  display: inline-block;
-  margin-right: 15px;
-}
 
 .experience {
   margin-top: 20px;
@@ -228,40 +292,6 @@ li.skills-item {
   grid-template-columns: 30% 70%; */
 }
 
-h3.title {
-  margin-top: 15px;
-  color: #7a8fbc;
-}
-.project-div {
-  border-bottom: 1px dashed #2b2b2b;
-  padding-bottom: 20px;
-}
-.github-heroku {
-  display: inline-flex;
-  margin: 0 auto;
-}
-.github,
-.github:visited,
-.github:hover {
-  /* text-decoration: none; */
-  cursor: pointer;
-  padding-top: 0;
-  margin-top: 0;
-  margin: 0 auto;
-  color: darkgrey;
-  text-align: center;
-}
-.heroku,
-.heroku:visited,
-.heroku:hover {
-  /* text-decoration: none; */
-  cursor: pointer;
-  padding-top: 0;
-  margin-top: 0;
-  margin-left: 5px;
-  color: darkgrey;
-  text-align: center;
-}
 .roles-experience {
   line-height: 1.15em;
   display: block;

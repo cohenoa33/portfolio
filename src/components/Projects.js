@@ -1,61 +1,52 @@
 import React from "react";
 import information from "../information";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default function Projects() {
   return (
-    <div>
-      <section id="projects">
-        <h2>PROJECTS</h2>
-        {information.projects.map((project) => (
-          <div key={project.name} className="project-div">
-            <h3 className="title">{project.name}</h3>
-            <div className="video">
-              <iframe
-                title={project.demo}
-                src={`https://www.youtube.com/embed/${project.demo}`}
-                frameBorder="0"
-              />
-            </div>
-            <div className="github-heroku">
+    <section id="projects">
+      <h2>PROJECTS</h2>
+      {information.projects.map((project) => (
+        <div key={project.name} className="project-div">
+          <h3 className="title">{project.name}</h3>
+          <div className="github-live">
+            <a
+              target="_blank"
+              className="github"
+              href={project.github}
+              rel="noreferrer"
+            >
+              GitHub
+              {/* <FontAwesomeIcon icon={faGithub} size="1x" /> */}
+            </a>{" "}
+            <br />
+            {project.live ? (
               <a
                 target="_blank"
-                className="github"
-                href={project.github}
+                className="live"
+                href={project.live}
                 rel="noreferrer"
               >
-                GitHub
+                Live Demo App
               </a>
-              <br />
-
-              {project.heroku ? (
-                <a
-                  target="_blank"
-                  className="heroku"
-                  href={project.heroku}
-                  rel="noreferrer"
-                >
-                  Live App
-                </a>
-              ) : null}
-              {project.surge ? (
-                <a
-                  target="_blank"
-                  className="heroku"
-                  href={project.surge}
-                  rel="noreferrer"
-                >
-                  Live App
-                </a>
-              ) : null}
-            </div>
-            <ul className="project-description">
-              {project.description.map((value) => (
-                <li key={value}>{value}</li>
-              ))}
-            </ul>
+            ) : null}
           </div>
-        ))}
-      </section>
-    </div>
+          <div className="video">
+            <iframe
+              title={project.demo}
+              src={`https://www.youtube.com/embed/${project.demo}`}
+              frameBorder="0"
+            />
+          </div>
+
+          <ul className="project-description">
+            {project.description.map((value) => (
+              <li key={value}>{value}</li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </section>
   );
 }

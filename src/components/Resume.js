@@ -6,14 +6,6 @@ const Resume = () => {
     <>
       <section id="resume">
         <div className="experience">
-          <h2>TECHNICAL SKILLS </h2>
-          <ul className="skills">
-            {information.skills.map((skill) => (
-              <li className="skills-item" key={skill.name}>
-                • {skill.name}
-              </li>
-            ))}
-          </ul>
           <h2>EDUCATION</h2>
           {information.education.map((school) => (
             <div className="roles-experience" key={school.school}>

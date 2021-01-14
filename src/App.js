@@ -7,6 +7,7 @@ import Contact from "./components/Contact";
 import Resume from "./components/Resume";
 import Social from "./components/Social";
 import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 
 class App extends React.Component {
   componentDidMount() {
@@ -33,6 +34,7 @@ class App extends React.Component {
         <div>
           <div id="navbar">
             <a href="#about">About</a>
+            <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#resume">Resume</a>
             <a href="#contact">Contact</a>
@@ -40,7 +42,7 @@ class App extends React.Component {
           </div>
           <div className="App">
             <Home />
-
+            <Skills />
             <Projects />
             <Resume />
             <Contact section="contact" />
