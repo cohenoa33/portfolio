@@ -5,8 +5,23 @@ const Resume = () => {
   return (
     <>
       <section id="resume">
+        <h2>Resume</h2>
+        <div className="download">
+          <a
+            className="download"
+            href="https://1drv.ms/b/s!AqSCQUSQABe5kVTJPn2-jiYsrXnZ?e=zrGpYE"
+            rel="noreferrer"
+            target="_blank"
+            download
+          >
+            {" "}
+            Download PDF
+            <i className="fa fa-download"> </i>
+          </a>
+          <br />
+        </div>
         <div className="experience">
-          <h2>EDUCATION</h2>
+          <h3>EDUCATION</h3>
           {information.education.map((school) => (
             <div className="roles-experience" key={school.school}>
               <span>{school.school}</span>
@@ -17,7 +32,7 @@ const Resume = () => {
               <br />
             </div>
           ))}
-          <h2>PROFESSIONAL EXPERIENCE</h2>
+          <h3>PROFESSIONAL EXPERIENCE</h3>
           {information.work.map((work) => (
             <div className="roles-experience" key={work.title}>
               <span>{work.title}</span>
@@ -25,7 +40,6 @@ const Resume = () => {
                 {work.company} • {work.location} • {work.years}
               </p>
               <p className="roles-experience-about">{work.about}</p>
-
               {work.job_description.map((role, index) => (
                 <div key={role.title}>
                   <span className="title">• {role.title}:</span>{" "}
@@ -36,20 +50,6 @@ const Resume = () => {
             </div>
           ))}
           <br />
-          <div className="download">
-            <a
-              className="download"
-              href="https://1drv.ms/b/s!AqSCQUSQABe5kVNPSNQmN67Uy8A5"
-              rel="noreferrer"
-              target="_blank"
-              download
-            >
-              {" "}
-              Download PDF
-              <i className="fa fa-download"> </i>
-            </a>
-            <br />
-          </div>
         </div>
       </section>
     </>

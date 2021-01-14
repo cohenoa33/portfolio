@@ -94,10 +94,11 @@ a.social-link {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   padding-top: 50px;
   color: #c9c9c9;
 }
+#resume h2,
 #skills h2,
 #projects h2 {
   font-weight: bold;
@@ -106,17 +107,24 @@ a.social-link {
   margin-bottom: 0px;
   color: rgb(179, 178, 178);
 }
-.project-div {
+.project-div:first-child {
   border-bottom: 1px dashed #c9c9c9;
   margin-top: 30px;
   margin-bottom: 30px;
+  padding-top: 30px;
+}
+.project-div {
+  border-bottom: 1px dashed #c9c9c9;
+  /* margin-top: 30px;
+  margin-bottom: 30px; */
+  padding-top: 30px;
 }
 .project-div:last-child {
   border-bottom: none;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
+h3.experience,
 h3.title {
   margin: 5px 0 5px;
   font-size: 1.75rem;
@@ -180,20 +188,8 @@ iframe {
   margin-right: 20px;
   text-align: justify;
 }
-
-/* I'm here */
-
-.download {
-  display: block;
-  margin: 0 auto;
-  width: 75%;
-}
-a.download {
-  color: #2b2b2b;
-  background-color: #7a8fbc;
-  text-decoration: none;
-  text-align: center;
-  font-size: 1.2em;
+#projects li:last-child {
+  margin-bottom: 30px;
 }
 
 #skills {
@@ -223,7 +219,6 @@ a.download {
   margin: 0 auto;
   list-style: square inside;
 }
-
 #resume {
   line-height: 2em;
   display: flex;
@@ -233,7 +228,24 @@ a.download {
   color: #f2f2f2;
   text-align: center;
   padding-top: 50px;
+  width: 70%;
+  border-top: 1px dashed grey;
+  margin: 0 auto;
 }
+.download {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+a.download {
+  color: #2b2b2b;
+  background-color: #7a8fbc;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 30px;
+}
+/* I'm here */
 
 #contact {
   background: #f2f2f2;
@@ -256,8 +268,7 @@ a.download {
   cursor: pointer;
 }
 
-#contact h2,
-#resume h2 {
+#contact h2 {
   font-size: 2rem;
   font-weight: bold;
   color: #7a8fbc;
@@ -267,8 +278,8 @@ a.download {
 .experience {
   margin-top: 20px;
   margin: 0 auto;
-  text-align: left;
-  width: 50%;
+  text-align: justify;
+  width: 70%;
   margin-bottom: 30px;
 }
 .contact {
@@ -280,15 +291,6 @@ a.download {
 .contact-details {
   line-height: 1.25rem;
   padding-top: 30px;
-}
-.profile {
-  display: none;
-  /* margin-top: 50px;
-  margin-bottom: 50px;
-  float: left;
-  width: 65%;
-  display: grid;
-  grid-template-columns: 30% 70%; */
 }
 
 .roles-experience {
@@ -303,7 +305,7 @@ a.download {
   padding-top: 15px;
   display: block;
   font-size: 1.1em;
-  color: darkgrey;
+  color: white;
   text-decoration: underline;
 }
 .roles-experience-about {
@@ -312,7 +314,6 @@ a.download {
   line-height: 1.4em;
 }
 span.title {
-  /* font-size: 100%; */
   font: inherit;
   color: darkgrey;
   font-size: 0.9em;
@@ -326,7 +327,7 @@ span.description {
   font-size: 0.9em;
   padding: 0;
   line-height: 1.4em;
-  color: #f2f2f2;
+  color: ;
   text-decoration: none;
   margin-left: 25px;
 }

@@ -1,7 +1,5 @@
 import React from "react";
 import information from "../information";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default function Projects() {
   return (
