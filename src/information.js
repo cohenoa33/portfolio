@@ -99,7 +99,10 @@ const information = {
     },
 
     {
-      name: "Ruby on Rails",
+      name: "Ruby",
+    },
+    {
+      name: "Rails",
     },
 
     {
@@ -117,7 +120,7 @@ const information = {
       github: "https://github.com/cohenoa33/follow-doc-frontend",
       youtube: "https://youtu.be/RfApZrbvUic",
       demo: "RfApZrbvUic",
-      surge: "https://follow-doc.surge.sh/",
+      live: "https://follow-doc.surge.sh/",
       description: [
         "Developed and designed React application to help the user keep track of medical issues and doctor appointments.",
         "Built complex Rails API backend with PostgreSQL using JSON Web Token (JWT) and Bcrypt to establish relationships between users, appointments, and doctors.",
@@ -129,7 +132,7 @@ const information = {
       name: "QPQ",
       github: "https://github.com/cohenoa33/qpq-frontend",
       youtube: "https://youtu.be/rYNZHStJLsk",
-      heroku: "https://qpq-client.herokuapp.com/",
+      live: "https://qpq-client.herokuapp.com/",
       demo: "rYNZHStJLsk",
       description: [
         "Collaborated with three engineers to build React web application allowing users to trade services.",
@@ -141,7 +144,7 @@ const information = {
       name: "What Should We Do",
       github: "https://github.com/cohenoa33/what-should-we-do-frontend",
       youtube: "https://youtu.be/ewwRIRbCr8w",
-      surge: "https://what-sholud-we-do.surge.sh/",
+      live: "https://what-sholud-we-do.surge.sh/",
       demo: "ewwRIRbCr8w",
       description: [
         "Created an activity journal to helps users log everywhere they visit and add reviews for those places.",
@@ -153,7 +156,7 @@ const information = {
       name: "Favfest",
       github: "https://github.com/cohenoa33/favfest",
       youtube: "https://youtu.be/VXQRUEcJHs0",
-      heroku: "https://favfest.herokuapp.com/",
+      live: "https://favfest.herokuapp.com/",
       demo: "VXQRUEcJHs0",
       description: [
         "Built Rails Application provides users with information about music festivals, allowing an interactive diary.",

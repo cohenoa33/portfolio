@@ -1,11 +1,11 @@
 import React from "react";
-import Social from "./Social";
 import image from "../images/profilepic.jpg";
 
 function Home() {
   return (
-    <section id="home">
-      <h1>NOA RABIN - COHEN</h1>
+    <section id="about">
+      <br />
+      <h1>NOA RABIN-COHEN</h1>
       <h2>SOFTWARE DEVELOPER</h2>
       <div className="about">
         <div className="about-text">
@@ -19,11 +19,8 @@ function Home() {
           Recognized by colleagues and supervisors for amazing customer service
           and organizational skills.
         </div>
-
         <img src={image} className="profile-pic" alt="Profile" />
       </div>
-
-      <Social className="social-link-home" size="2x" />
     </section>
   );
 }
