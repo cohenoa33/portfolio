@@ -29,14 +29,26 @@
   font-size: 1.1em;
 }
 
-#navbar a:hover,
-svg:hover {
+#navbar a:hover {
   background-color: #f2f2f2;
   color: #2b2b2b;
 }
 
-a.social-link {
-  padding-right: 10px;
+#social-menu {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 20px;
+  z-index: 2;
+}
+ul#social-menu {
+  list-style: none;
+}
+svg {
+  color: aquamarine;
+  margin-top: 10px;
 }
 
 #about {
@@ -327,13 +339,13 @@ span.description {
   cursor: pointer;
 }
 
-i {
+/* i {
   margin-left: 5px;
 }
 .contact-social {
   margin-top: 20px;
   font-size: 20px;
-}
+} */
 
 @media only screen and (max-width: 760px),
   (min-device-width: 768px) and (max-device-width: 1024px) {

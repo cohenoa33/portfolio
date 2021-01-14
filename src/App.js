@@ -38,9 +38,9 @@ class App extends React.Component {
             <a href="#projects">Projects</a>
             <a href="#resume">Resume</a>
             <a href="#contact">Contact</a>
-            <Social size="lg" color="#f2f2f2" />
           </div>
           <div className="App">
+            <Social />
             <Home />
             <Skills />
             <Projects />

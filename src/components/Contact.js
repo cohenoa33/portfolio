@@ -17,9 +17,9 @@ const Contact = ({ section }) => {
           </a>
         </span>
         <br />
-        <p className="contact-social">
+        {/* <p className="contact-social">
           <Social className="social-link" size="2x" color="white" />
-        </p>
+        </p> */}
       </div>
     </div>
   );
