@@ -1,10 +1,10 @@
 import React from "react";
-import Social from "./Social";
 import image from "../images/profilepic.jpg";
 
 function Home() {
   return (
-    <section id="home">
+    <section id="about">
+      <br />
       <h1>NOA RABIN-COHEN</h1>
       <h2>SOFTWARE DEVELOPER</h2>
       <div className="about">

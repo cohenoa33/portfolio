@@ -59,12 +59,3 @@ export default function Projects() {
     </div>
   );
 }
-
-// name: "Favfest",
-// github: "https://github.com/cohenoa33/favfest",
-// demo: "https://youtu.be/VXQRUEcJHs0",
-// description: [
-//   "Built Rails Application provides users with information about music festivals, allowing an interactive diary.",
-//   "Utilized MVC structure and RESTful conventions, HTML Forms, ActiveRecord Models, and Relationship using Postgres Database. Added custom validations to increase security.",
-//   "Embedded seeded YouTube links that rendered fully interactive videos on rendered pages.",
-// ],

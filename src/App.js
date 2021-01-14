@@ -32,11 +32,11 @@ class App extends React.Component {
       <HashRouter>
         <div>
           <div id="navbar">
-            <a href="#home">Home</a>
+            <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#resume">Resume</a>
             <a href="#contact">Contact</a>
-            <Social size="lg" color="#FDEDCD" />
+            <Social size="lg" color="#f2f2f2" />
           </div>
           <div className="App">
             <Home />
