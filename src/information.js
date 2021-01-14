@@ -99,7 +99,10 @@ const information = {
     },
 
     {
-      name: "Ruby on Rails",
+      name: "Ruby",
+    },
+    {
+      name: "Rails",
     },
 
     {

@@ -19,7 +19,6 @@ function Home() {
           Recognized by colleagues and supervisors for amazing customer service
           and organizational skills.
         </div>
-
         <img src={image} className="profile-pic" alt="Profile" />
       </div>
     </section>
