@@ -1,7 +1,84 @@
 * {
   box-sizing: border-box;
-  font-family: "Source Sans Pro";
-  font-size: 1rem;
+  font-family: "Inconsolata";
+}
+#navbar {
+  background-color: #2b2b2b;
+  position: fixed;
+  top: -0;
+  width: 100%;
+  /* transition: top 0.3s; */
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the navbar links */
+#navbar a {
+  display: inline-block;
+  color: #fdedcd;
+  align-self: start;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+#navbar a:hover,
+svg:hover {
+  background-color: #f2f2f2;
+  color: #2b2b2b;
+}
+#home {
+  /*background: #2b2b2b;
+  background-image: url("images/header-background.jpg");
+  height: 720px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background-image: linear-gradient(to right, rgb(53, 53, 53), rgb(93, 93, 93));
+  box-shadow: inset 0 0 50px rgb(104, 104, 104);
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #f2f2f2;
+  text-align: justify;
+}
+#home h1 {
+  font-size: 3.75rem;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+#home h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.about {
+  width: 60%;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  float: center;
+  background-color: #2b2b2b;
+}
+.about-text {
+  width: 90%;
+  padding: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  line-height: 2rem;
+  font-size: 1.15rem;
+}
+.profile-pic {
+  margin-top: 10px;
+  padding: 50px 20px 50px 10px;
+  text-align: left;
+  width: 250px;
 }
 
 .video {
@@ -23,13 +100,10 @@ iframe {
   height: 100%;
 }
 
-a.social-link,
-a.social-link-home {
+a.social-link {
   padding-right: 10px;
 }
-.social-link-home {
-  padding-top: 50px;
-}
+
 .download {
   display: block;
   margin: 0 auto;
@@ -42,32 +116,7 @@ a.download {
   text-align: center;
   font-size: 1.2em;
 }
-#home {
-  background: #2b2b2b;
-  background-image: url("images/header-background.jpg");
-  height: 700px;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  line-height: 2em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: #f2f2f2;
-  text-align: center;
-}
-#home h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-top: -10px;
-  margin-bottom: 0px;
-}
-#home h2 {
-  font-size: 2rem;
-  font-weight: bold;
-}
+
 #about,
 #resume {
   background: #2b2b2b;
@@ -152,22 +201,6 @@ li.skills-item {
   display: inline-block;
   margin-right: 15px;
 }
-.about {
-  width: 60%;
-  display: grid;
-  grid-template-columns: 80% 20%;
-  float: center;
-  background-color: #2b2b2b;
-}
-.about-text {
-  width: 90%;
-  background-color: #2b2b2b;
-  padding: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
-  line-height: 1.5rem;
-}
 
 .experience {
   margin-top: 20px;
@@ -196,12 +229,6 @@ li.skills-item {
   grid-template-columns: 30% 70%; */
 }
 
-.profile-pic {
-  margin-top: 10px;
-  padding: 50px 20px 50px 10px;
-  text-align: left;
-  width: 100%;
-}
 h3.title {
   margin-top: 15px;
   color: #7a8fbc;
@@ -293,29 +320,6 @@ a.contact-social {
 
 a.details {
   font-size: 1.25rem;
-}
-
-#navbar {
-  background-color: #2b2b2b;
-  position: fixed;
-  top: -50px;
-  width: 100%;
-  transition: top 0.3s;
-  z-index: 1;
-}
-
-/* Style the navbar links */
-#navbar a {
-  display: inline-block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 10px;
-  text-decoration: none;
-}
-
-#navbar a:hover {
-  background-color: #f2f2f2;
-  color: #2b2b2b;
 }
 
 @media only screen and (max-width: 760px),

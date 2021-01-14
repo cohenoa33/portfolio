@@ -5,7 +5,7 @@ import image from "../images/profilepic.jpg";
 function Home() {
   return (
     <section id="home">
-      <h1>NOA RABIN - COHEN</h1>
+      <h1>NOA RABIN-COHEN</h1>
       <h2>SOFTWARE DEVELOPER</h2>
       <div className="about">
         <div className="about-text">
@@ -22,8 +22,6 @@ function Home() {
 
         <img src={image} className="profile-pic" alt="Profile" />
       </div>
-
-      <Social className="social-link-home" size="2x" />
     </section>
   );
 }

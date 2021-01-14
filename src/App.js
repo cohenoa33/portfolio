@@ -5,6 +5,7 @@ import { HashRouter } from "react-router-dom";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
+import Social from "./components/Social";
 import Projects from "./components/Projects";
 
 class App extends React.Component {
@@ -35,6 +36,7 @@ class App extends React.Component {
             <a href="#projects">Projects</a>
             <a href="#resume">Resume</a>
             <a href="#contact">Contact</a>
+            <Social size="lg" color="#FDEDCD" />
           </div>
           <div className="App">
             <Home />
