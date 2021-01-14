@@ -124,7 +124,7 @@ a.social-link {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-h3.experience,
+
 h3.title {
   margin: 5px 0 5px;
   font-size: 1.75rem;
@@ -238,23 +238,79 @@ iframe {
   width: 50%;
 }
 a.download {
-  color: #2b2b2b;
-  background-color: #7a8fbc;
+  color: white;
+  background-color: #2b2b2b;
   text-decoration: none;
   text-align: center;
   font-size: 1.2em;
   margin-top: 30px;
 }
+.resume {
+  margin: 0 auto;
+  text-align: justify;
+  width: 70%;
+  margin-bottom: 30px;
+  background-color: white;
+  color: #2b2b2b;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.roles-experience {
+  line-height: 1.15em;
+  display: block;
+  padding-bottom: 3px;
+  text-decoration: none;
+  padding-right: 25px;
+}
+
+.roles-experience span {
+  font-weight: bold;
+  display: block;
+  font-size: 1.1em;
+  color: darkgrey;
+  text-decoration: underline;
+}
+.role-experience-title {
+  display: block;
+  font-size: 1.05em;
+  color: #2f2f2f;
+  font-weight: bold;
+}
+.roles-experience-about {
+  display: block;
+  line-height: 1.4em;
+  text-align: justify;
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+span.title {
+  font: inherit;
+  color: darkgrey;
+  font-size: 1.1rem;
+  line-height: 1.3em;
+  padding: 0;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 25px;
+}
+span.description {
+  font-size: 0.9em;
+  padding: 0;
+  line-height: 1.4em;
+  color: #2f2f2f;
+  text-decoration: none;
+  margin-left: 40px;
+  font-weight: bolder;
+}
 /* I'm here */
 
 #contact {
-  background: #f2f2f2;
   line-height: 1.15em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: left;
-  font-size: calc(10px + 2vmin);
   color: #2b2b2b;
   text-align: center;
   padding-top: 30px;
@@ -275,13 +331,6 @@ a.download {
   margin-bottom: -10px;
 }
 
-.experience {
-  margin-top: 20px;
-  margin: 0 auto;
-  text-align: justify;
-  width: 70%;
-  margin-bottom: 30px;
-}
 .contact {
   margin-top: 10px;
   margin: 0 auto;
@@ -293,44 +342,6 @@ a.download {
   padding-top: 30px;
 }
 
-.roles-experience {
-  line-height: 1.15em;
-  display: block;
-  padding-bottom: 3px;
-  text-decoration: none;
-}
-
-.roles-experience span {
-  font-weight: bold;
-  padding-top: 15px;
-  display: block;
-  font-size: 1.1em;
-  color: white;
-  text-decoration: underline;
-}
-.roles-experience-about {
-  padding-right: 25px;
-  display: block;
-  line-height: 1.4em;
-}
-span.title {
-  font: inherit;
-  color: darkgrey;
-  font-size: 0.9em;
-  line-height: 1.3em;
-  padding: 0;
-  font-weight: bold;
-  text-decoration: none;
-  margin-left: 25px;
-}
-span.description {
-  font-size: 0.9em;
-  padding: 0;
-  line-height: 1.4em;
-  color: ;
-  text-decoration: none;
-  margin-left: 25px;
-}
 i {
   margin-left: 5px;
 }

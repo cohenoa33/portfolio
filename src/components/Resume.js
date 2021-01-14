@@ -20,12 +20,12 @@ const Resume = () => {
           </a>
           <br />
         </div>
-        <div className="experience">
+        <div className="resume">
           <h3>EDUCATION</h3>
           {information.education.map((school) => (
             <div className="roles-experience" key={school.school}>
               <span>{school.school}</span>
-              <p>
+              <p className="role-experience-title">
                 {school.degree} • {school.graduated} • {school.location}
               </p>
               <p className="roles-experience-about">{school.description}</p>
@@ -36,7 +36,7 @@ const Resume = () => {
           {information.work.map((work) => (
             <div className="roles-experience" key={work.title}>
               <span>{work.title}</span>
-              <p>
+              <p className="role-experience-title">
                 {work.company} • {work.location} • {work.years}
               </p>
               <p className="roles-experience-about">{work.about}</p>
