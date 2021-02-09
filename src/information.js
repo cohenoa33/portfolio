@@ -77,6 +77,9 @@ const information = {
       name: "ActiveRecord",
     },
     {
+      name: "Node",
+    },
+    {
       name: "AWS",
     },
     {
@@ -92,25 +95,31 @@ const information = {
       name: "PostgreSQL",
     },
     {
+      name: "GraphQL",
+    },
+    {
       name: "React",
     },
     {
       name: "Redux",
     },
-
+    {
+      name: "Git",
+    },
+    {
+      name: "GitHub",
+    },
     {
       name: "Ruby",
     },
     {
       name: "Rails",
     },
-
+    {
+      name: "TypeScript",
+    },
     {
       name: "SQL",
-    },
-
-    {
-      name: "SQLite",
     },
   ],
 
