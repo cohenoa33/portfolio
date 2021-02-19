@@ -17,6 +17,7 @@ class App extends React.Component {
   componentWillUnmount() {
     window.removeEventListener("scroll", this.handleScroll);
   }
+
   handleScroll() {
     if (
       document.body.scrollTop > 20 ||

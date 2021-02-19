@@ -349,6 +349,12 @@ span.description {
     width: 100%;
   }
 
+  #navbar{
+   font-size: 0.75rem;
+  }
+  #navbar a {
+    padding-right: 5px;
+  }
   .about {
     display: block;
     width: 90%;
