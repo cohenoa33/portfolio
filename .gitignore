@@ -27,6 +27,6 @@ yarn-error.log*
 .eslintcache
 .env
 
-/data
+/src/data
 
 
