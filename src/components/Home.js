@@ -5,7 +5,9 @@ function Home() {
   return (
     <section id="about">
       <br />
-      <h1>NOA RABIN-COHEN</h1>
+      <h1>
+        NOA <span className="lastName">RABIN-COHEN</span>
+      </h1>
       <h2>SOFTWARE DEVELOPER</h2>
       <div className="about">
         <div className="about-text">

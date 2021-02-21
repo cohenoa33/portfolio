@@ -116,7 +116,7 @@ const information = {
       name: "Rails"
     },
     {
-      name: "Express"
+      name: "Express.js"
     },
     {
       name: "TypeScript"

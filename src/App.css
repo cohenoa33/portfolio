@@ -69,10 +69,15 @@ svg:hover {
   font-weight: bold;
   margin-top: 50px;
   margin-bottom: 0px;
+  text-align: center;
+
+}
+.lastName {
+  display: inline-block;
 }
 #about h2 {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: bold; text-align: center;
 }
 .about {
   width: 60%;
@@ -209,6 +214,8 @@ iframe {
   color: #f2f2f2;
   text-align: center;
   padding-top: 50px;
+
+
 }
 
 .skills {
@@ -218,7 +225,9 @@ iframe {
   font-weight: bold;
   font-size: 1.75em;
   max-width: 60%;
-  overflow: auto;
+  overflow: auto;  
+
+
 }
 .skills-item {
   margin-bottom: -10px;
@@ -396,6 +405,7 @@ span.description {
     font-size: 3rem;
     font-weight: bold;
   }
+
   #about h2 {
     font-size: 1.5rem;
     font-weight: bold;
@@ -420,4 +430,8 @@ span.description {
   .contact {
     width: 70%;
   }
+  .skills{
+    font-size:100%;
+  }
 }
+
