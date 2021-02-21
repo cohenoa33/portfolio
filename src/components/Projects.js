@@ -1,5 +1,5 @@
 import React from "react";
-import information from "../information";
+import information from "../data/information";
 
 export default function Projects() {
   return (
