@@ -7,15 +7,15 @@ const information = {
       graduated: "October 2020",
       location: "Seattle, WA",
       description:
-        "Completed Flatiron School's 15-week Software Engineering boot camp, with a focus on Ruby, Ruby on Rails, JavaScript, and React. I built five projects, ranging from a Ruby-based command-line interface to my final solo project built in React/Redux with a Ruby on Rails back end.",
+        "Completed Flatiron School's 15-week Software Engineering boot camp, with a focus on Ruby, Ruby on Rails, JavaScript, and React. I built five projects, ranging from a Ruby-based command-line interface to my final solo project built in React/Redux with a Ruby on Rails back end."
     },
     {
       school: "The College of Management Academic Studies, Israel",
       degree: "Bachelor's degree, Media Studies & Management ",
       graduated: "July 2011",
       location: "Israel",
-      description: "",
-    },
+      description: ""
+    }
   ],
   work: [
     {
@@ -29,19 +29,19 @@ const information = {
         {
           title: "Operations Strategy",
           description:
-            "Designed, planned, executed, and managed a large-scale project of an online box-office/ticketing platform website. Implement processes to ease remote working using cloud technologies. Designed and maintained company data sets.  Subsidiary eventually became one of Israel's biggest ticketing companies.",
+            "Designed, planned, executed, and managed a large-scale project of an online box-office/ticketing platform website. Implement processes to ease remote working using cloud technologies. Designed and maintained company data sets.  Subsidiary eventually became one of Israel's biggest ticketing companies."
         },
         {
           title: "Project Management",
           description:
-            "Planned and managed more than 30 project schedules, timelines, and budgets of $100k - $1M annually. Resulted in 30% growth in new projects each year.",
+            "Planned and managed more than 30 project schedules, timelines, and budgets of $100k - $1M annually. Resulted in 30% growth in new projects each year."
         },
         {
           title: "Training",
           description:
-            "Supported Representatives in troubleshooting complicated calls as well as technical support and software issues. Improved overall retention and reduced hiring costs. Managed 15 employees directly and oversaw over 100.",
-        },
-      ],
+            "Supported Representatives in troubleshooting complicated calls as well as technical support and software issues. Improved overall retention and reduced hiring costs. Managed 15 employees directly and oversaw over 100."
+        }
+      ]
     },
     {
       company: "Zappa Group",
@@ -54,9 +54,9 @@ const information = {
         {
           title: "Customer Relationship Management",
           description:
-            "Managed and operated the VIP membership club (e.g. communications, billing, tracking membership renewal, event coordination, and data analysis). Increased new memberships by 10% monthly and improved membership retention by 5% yearly.",
-        },
-      ],
+            "Managed and operated the VIP membership club (e.g. communications, billing, tracking membership renewal, event coordination, and data analysis). Increased new memberships by 10% monthly and improved membership retention by 5% yearly."
+        }
+      ]
     },
     {
       company: "Ankona Advertising",
@@ -67,51 +67,63 @@ const information = {
         {
           title: "Coordination | Advertising | Collaboration",
           description:
-            "Coordinated high-profile corporate agency clients (such as Microsoft Israel and Office Depot Israel) Creatives and Account Executives to create marketing and advertising campaigns with budgets of $20K - $50K. Integral part of team that developed advertising for retails stores.",
-        },
-      ],
-    },
+            "Coordinated high-profile corporate agency clients (such as Microsoft Israel and Office Depot Israel) Creatives and Account Executives to create marketing and advertising campaigns with budgets of $20K - $50K. Integral part of team that developed advertising for retails stores."
+        }
+      ]
+    }
   ],
   skills: [
     {
-      name: "ActiveRecord",
+      name: "ActiveRecord"
     },
     {
-      name: "AWS",
+      name: "Node.js"
     },
     {
-      name: "CSS",
+      name: "AWS"
     },
     {
-      name: "HTML",
+      name: "CSS"
     },
     {
-      name: "JavaScript",
+      name: "HTML"
     },
     {
-      name: "PostgreSQL",
+      name: "JavaScript"
     },
     {
-      name: "React",
+      name: "PostgreSQL"
     },
     {
-      name: "Redux",
-    },
-
-    {
-      name: "Ruby",
+      name: "GraphQL"
     },
     {
-      name: "Rails",
+      name: "React"
     },
-
     {
-      name: "SQL",
+      name: "Redux"
     },
-
     {
-      name: "SQLite",
+      name: "Git"
     },
+    {
+      name: "GitHub"
+    },
+    {
+      name: "Ruby"
+    },
+    {
+      name: "Rails"
+    },
+    {
+      name: "Express.js"
+    },
+    {
+      name: "TypeScript"
+    },
+    {
+      name: "SQL"
+    }
   ],
 
   projects: [
@@ -125,8 +137,8 @@ const information = {
         "Developed and designed React application to help the user keep track of medical issues and doctor appointments.",
         "Built complex Rails API backend with PostgreSQL using JSON Web Token (JWT) and Bcrypt to establish relationships between users, appointments, and doctors.",
         "Utilized ActiveStorage and AWS to store user files and Google Maps API to display appointment locations.",
-        "Created and designed user interface using React and Redux, and CSS for styling.",
-      ],
+        "Created and designed user interface using React and Redux, and CSS for styling."
+      ]
     },
     {
       name: "QPQ",
@@ -137,8 +149,8 @@ const information = {
       description: [
         "Collaborated with three engineers to build React web application allowing users to trade services.",
         "Developed Rails API and PostgreSQL backend with endpoints for users and services.",
-        "Produced React Js frontend with CSS to display services information.",
-      ],
+        "Produced React Js frontend with CSS to display services information."
+      ]
     },
     {
       name: "What Should We Do",
@@ -149,8 +161,8 @@ const information = {
       description: [
         "Created an activity journal to helps users log everywhere they visit and add reviews for those places.",
         "Built a single page application with HTML, CSS, and vanilla JavaScript.",
-        "Generated Rails API backend to track activities and users.",
-      ],
+        "Generated Rails API backend to track activities and users."
+      ]
     },
     {
       name: "Favfest",
@@ -161,9 +173,9 @@ const information = {
       description: [
         "Built Rails Application provides users with information about music festivals, allowing an interactive diary.",
         "Utilized MVC structure and RESTful conventions, HTML Forms, ActiveRecord Models, and Relationship using Postgres Database. Added custom validations to increase security.",
-        "Embedded seeded YouTube links that rendered fully interactive videos on rendered pages.",
-      ],
-    },
-  ],
+        "Embedded seeded YouTube links that rendered fully interactive videos on rendered pages."
+      ]
+    }
+  ]
 };
 export default information;
