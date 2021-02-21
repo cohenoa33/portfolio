@@ -23,3 +23,8 @@ yarn-debug.log*
 yarn-error.log*
 
 /not_used_components
+
+.eslintcache
+.env
+
+

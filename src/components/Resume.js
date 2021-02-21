@@ -9,7 +9,7 @@ const Resume = () => {
         <div className="download">
           <a
             className="download"
-            href="https://1drv.ms/b/s!AqSCQUSQABe5kVTJPn2-jiYsrXnZ?e=zrGpYE"
+            href={process.env.REACT_APP_URL}
             rel="noreferrer"
             target="_blank"
             download
