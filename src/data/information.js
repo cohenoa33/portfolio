@@ -83,6 +83,9 @@ const information = {
       name: "AWS"
     },
     {
+      name: "Next"
+    },
+    {
       name: "CSS"
     },
     {
@@ -116,7 +119,10 @@ const information = {
       name: "Rails"
     },
     {
-      name: "Express.js"
+      name: "Express"
+    },
+    {
+      name: "Jwt"
     },
     {
       name: "TypeScript"

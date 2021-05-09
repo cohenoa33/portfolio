@@ -5,7 +5,9 @@
 .App {
   background-image: linear-gradient(to right, rgb(53, 53, 53), rgb(93, 93, 93));
   box-shadow: inset 0 0 50px rgb(104, 104, 104);
+
 }
+
 
 #navbar {
   background-color: #2b2b2b;
@@ -58,18 +60,26 @@ svg:hover {
 #about {
   min-height: 800px;
   display: flex;
+  background-image: url('images/background.jpg');
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-color: #cccccc;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: #f2f2f2;
   text-align: justify;
 }
+
 #about h1 {
   font-size: 3.75rem;
-  font-weight: bold;
+  font-weight: bold !important;
   margin-top: 50px;
   margin-bottom: 0px;
   text-align: center;
+  color:  #2b2b2b;
+  text-shadow: 3px 3px 6px #707070;
 
 }
 .lastName {
@@ -77,7 +87,10 @@ svg:hover {
 }
 #about h2 {
   font-size: 2rem;
-  font-weight: bold; text-align: center;
+  font-weight: bold !important;
+   text-align: center;
+  color:  #2b2b2b;
+  text-shadow: 3px 3px 6px #707070;
 }
 .about {
   width: 60%;
