@@ -147,6 +147,18 @@ const information = {
       ]
     },
     {
+      name: "Appointment List",
+      github: "https://github.com/cohenoa33/appointments",
+      youtube: "https://youtu.be/kYwYuTt2f5w",
+      demo: "kYwYuTt2f5w",
+      live: "https://cohenoa33.github.io/appointments/",
+      description: [
+        "Created a Multi-Language Website based on React Hooks and React Context, allows the user to track medical appointments.",
+        "Formed a functional search engine that allows users to narrow down their list based on name,  doctor, and other information.",
+        "Designed fully responsive user interface using CSS and  SASS."
+      ]
+    },
+    {
       name: "QPQ",
       github: "https://github.com/cohenoa33/qpq-frontend",
       youtube: "https://youtu.be/rYNZHStJLsk",
