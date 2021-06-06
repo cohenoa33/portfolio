@@ -1,5 +1,6 @@
 import React from "react";
 import information from "../data/information";
+import YouTube from "./YouTube";
 
 export default function Projects() {
   return (
@@ -16,7 +17,6 @@ export default function Projects() {
               rel="noreferrer"
             >
               GitHub
-              {/* <FontAwesomeIcon icon={faGithub} size="1x" /> */}
             </a>{" "}
             <br />
             {project.live ? (
@@ -30,13 +30,8 @@ export default function Projects() {
               </a>
             ) : null}
           </div>
-          <div className="video">
-            <iframe
-              title={project.demo}
-              src={`https://www.youtube.com/embed/${project.demo}`}
-              frameBorder="0"
-            />
-          </div>
+
+          <YouTube videoId={project.demo} />
 
           <ul className="project-description">
             {project.description.map((value) => (

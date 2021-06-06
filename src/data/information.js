@@ -77,10 +77,13 @@ const information = {
       name: "ActiveRecord"
     },
     {
-      name: "Node.js"
+      name: "Node.Js"
     },
     {
       name: "AWS"
+    },
+    {
+      name: "Next.Js"
     },
     {
       name: "CSS"
@@ -116,7 +119,10 @@ const information = {
       name: "Rails"
     },
     {
-      name: "Express.js"
+      name: "Express"
+    },
+    {
+      name: "JWT"
     },
     {
       name: "TypeScript"
@@ -138,6 +144,18 @@ const information = {
         "Built complex Rails API backend with PostgreSQL using JSON Web Token (JWT) and Bcrypt to establish relationships between users, appointments, and doctors.",
         "Utilized ActiveStorage and AWS to store user files and Google Maps API to display appointment locations.",
         "Created and designed user interface using React and Redux, and CSS for styling."
+      ]
+    },
+    {
+      name: "Appointment List",
+      github: "https://github.com/cohenoa33/appointments",
+      youtube: "https://youtu.be/kYwYuTt2f5w",
+      demo: "kYwYuTt2f5w",
+      live: "https://cohenoa33.github.io/appointments/",
+      description: [
+        "Created a Multi-Language Website based on React Hooks and React Context, allows the user to track medical appointments.",
+        "Formed a functional search engine that allows users to narrow down their list based on name,  doctor, and other information.",
+        "Designed fully responsive user interface using CSS and  SASS."
       ]
     },
     {
