@@ -12,7 +12,7 @@ const Contact = ({ section }) => {
         <span>
           {" "}
           <a href="mailto: me@noarabincohen.com" className="details">
-            me@noarabincohen.com
+            Me@noarabincohen.com
           </a>
         </span>
         <br />

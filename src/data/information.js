@@ -77,13 +77,13 @@ const information = {
       name: "ActiveRecord"
     },
     {
-      name: "Node.js"
+      name: "Node.Js"
     },
     {
       name: "AWS"
     },
     {
-      name: "Next"
+      name: "Next.Js"
     },
     {
       name: "CSS"
@@ -122,7 +122,7 @@ const information = {
       name: "Express"
     },
     {
-      name: "Jwt"
+      name: "JWT"
     },
     {
       name: "TypeScript"
