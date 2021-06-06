@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import { HashRouter } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Home from "./components/Home";
 import Contact from "./components/Contact";
@@ -8,6 +9,8 @@ import Resume from "./components/Resume";
 import Social from "./components/Social";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import ResumePdf from "./components/ResumePdf";
+import HomePage from "./components/HomePage";
 
 class App extends React.Component {
   componentDidMount() {
@@ -32,6 +35,13 @@ class App extends React.Component {
   render() {
     return (
       <HashRouter>
+        {" "}
+        <Router>
+          <Route exact path="/" render={() => <HomePage />} />
+        </Router>
+        <Router>
+          <Route path="/noa-rabin-cohen-resume" render={() => <ResumePdf />} />
+        </Router>
         <div>
           <div id="navbar">
             <a href="#about">About</a>
@@ -39,14 +49,6 @@ class App extends React.Component {
             <a href="#projects">Projects</a>
             <a href="#resume">Resume</a>
             <a href="#contact">Contact</a>
-          </div>
-          <div className="App">
-            <Social />
-            <Home />
-            <Skills />
-            <Projects />
-            <Resume />
-            <Contact section="contact" />
           </div>
         </div>
       </HashRouter>

@@ -1,6 +1,7 @@
 import React from "react";
+import { router } from "react-router-dom";
 import information from "../data/information";
-
+import ResumePdf from "./ResumePdf";
 const Resume = () => {
   return (
     <>
@@ -18,6 +19,17 @@ const Resume = () => {
             Download PDF
             <i className="fa fa-download"> </i>
           </a>
+          <button
+            className="PDFVersion"
+            href={process.env.REACT_APP_URL}
+            rel="noreferrer"
+            target="_blank"
+            download
+          >
+            {" "}
+            Download PDF
+            <i className="fa fa-download"> </i>
+          </button>
           <br />
         </div>
         <div className="resume">
