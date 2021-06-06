@@ -50,7 +50,7 @@ ul#social-menu {
   list-style: none;
 }
 svg {
-  color: rgb(5, 151, 230);
+  color:  rgb(96, 194, 161);
   margin-top: 10px;
   border-radius: 5px;
 }
@@ -382,10 +382,13 @@ span.description {
 }
 
 #contact a {
+  color:  rgb(96, 194, 161);;
   text-decoration: none;
-  color: aquamarine;
   cursor: pointer;
   word-break: break-word;
+}
+#contact a:hover {
+  color: aquamarine;
 }
 
 @media only screen and (max-width: 760px),
