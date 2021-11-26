@@ -1,7 +1,7 @@
 import React from "react";
 
-const Contact = ({ section }) => {
-  let contact = (
+const Contact = ({ section }: Props) => {
+  let contact: JSX.Element = (
     <div className="contact">
       <h2>Contact Me</h2>
       <div className="contact-details">
@@ -20,11 +20,14 @@ const Contact = ({ section }) => {
     </div>
   );
 
-  const render = (section) => {
+  const render = (section: string) => {
     if (section === undefined) return contact;
     return <section id={section}>{contact}</section>;
   };
   return render(section);
 };
 
+interface Props {
+  section: string;
+}
 export default Contact;

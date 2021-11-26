@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function YouTube({ videoId }) {
+export default function YouTube({ videoId }: Props) {
   return (
     <div className="video">
       <iframe
@@ -10,4 +10,7 @@ export default function YouTube({ videoId }) {
       />
     </div>
   );
+}
+interface Props {
+  videoId: string;
 }
