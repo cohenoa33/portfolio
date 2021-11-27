@@ -1,4 +1,5 @@
 import React from "react";
+import { titleize, titleizeTitle } from "../helpers";
 import information from "../data/information";
 
 const Resume = () => {
@@ -41,9 +42,11 @@ const Resume = () => {
               </p>
               <p className="roles-experience-about">{work.about}</p>
               {work.job_description.map((role, index) => (
-                <div key={role.title}>
-                  <span className="title">• {role.title}:</span>{" "}
-                  <span className="description">{role.description}</span>
+                <div key={`${role.title}-"role${index}`}>
+                  <span className="title">• {titleizeTitle(role.title)}:</span>{" "}
+                  <span className="description">
+                    {titleize(role.description)}
+                  </span>
                 </div>
               ))}
               <br />

@@ -19,6 +19,31 @@ const information = {
   ],
   work: [
     {
+      company: "Anchor Technologies",
+      title: "Full-Stack Software Developer",
+      years: "2021 - present",
+      location: "Remote",
+      about:
+        "Developing a series of integrated web apps allowing for an entirely new product to be launched. Collaborating with the product owner, stack holders, and other engineers to translate requirements into technical design, review application functionality, and define project requirements and execution plans. Work with Typescript, Javascript, Express, Webpack, GraphQL,  Apollo server.",
+      job_description: [
+        {
+          title: "front End",
+          description:
+            "Developing and implementing the product end-to-end features. Building reusable front-end components to improve readability and maintainability by abstracting code, and simplifying methods. Utilizing React framework with styled-components and Material-UI."
+        },
+        {
+          title: "back End",
+          description:
+            "engineering Node.js server/backend systems to support data-intensive systems. architecting schemas to create complex relationships between models and manipulate data to optimize requests."
+        },
+        {
+          title: "Full Stack",
+          description:
+            "Building and designing innovative admin web app to manage customers, manage customers databases, and update other servers."
+        }
+      ]
+    },
+    {
       company: "Zappa Group",
       title: "Operations Manager | Project Manager",
       years: "2011 - 2018",
