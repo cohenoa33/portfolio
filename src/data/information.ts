@@ -20,24 +20,24 @@ const information = {
   work: [
     {
       company: "Anchor Technologies",
-      title: "Full-Stack Software Developer",
-      years: "2021 - present",
+      title: "Full Stack Developer",
+      years: "2021 - Present",
       location: "Remote",
       about:
-        "Developing a series of integrated web apps allowing for an entirely new product to be launched. Collaborating with the product owner, stack holders, and other engineers to translate requirements into technical design, review application functionality, and define project requirements and execution plans. Work with Typescript, Javascript, Express, Webpack, GraphQL,  Apollo server.",
+        "Developing a series of integrated web apps allowing for an entirely new product to be launched. Collaborating with the product owner, stack holders, and other engineers to translate requirements into technical design, review application functionality, and define project requirements and execution plans. Working with Typescript, Javascript, Express, Webpack, GraphQL,  Apollo server.",
       job_description: [
         {
-          title: "front End",
+          title: undefined,
           description:
             "Developing and implementing the product end-to-end features. Building reusable front-end components to improve readability and maintainability by abstracting code, and simplifying methods. Utilizing React framework with styled-components and Material-UI."
         },
         {
-          title: "back End",
+          title: undefined,
           description:
-            "engineering Node.js server/backend systems to support data-intensive systems. architecting schemas to create complex relationships between models and manipulate data to optimize requests."
+            "engineering Node.js server/backend systems to support data-intensive systems. Architecting schemas to create complex relationships between models and manipulate data to optimize requests."
         },
         {
-          title: "Full Stack",
+          title: undefined,
           description:
             "Building and designing innovative admin web app to manage customers, manage customers databases, and update other servers."
         }

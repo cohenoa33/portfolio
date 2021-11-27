@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function YouTube({ videoId }: Props) {
   return (
     <div className="video">

@@ -1,4 +1,3 @@
-import React from "react";
 import information from "../data/information";
 import YouTube from "./YouTube";
 

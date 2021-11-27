@@ -1,5 +1,3 @@
-import React from "react";
-
 const Contact = ({ section }: Props) => {
   let contact: JSX.Element = (
     <div className="contact">

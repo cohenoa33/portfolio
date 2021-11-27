@@ -1,42 +1,37 @@
-export function titleize(string: string): string {
-  const str = string.split(".");
-  return str
-    .map((word: string) => {
-      if (word.trim().length > 0) {
-        return `${word?.trim()?.[0]?.toUpperCase()}${word?.trim()?.slice(1)}.`;
-      }
-      return "";
-    })
-    .join(" ")
-    .trim();
-}
-export function titleizeTitle(string: string): string {
+export function titleize(string: string, title?: boolean): string {
   const specialties = [];
+  let str = string;
   for (let i = 0; i < ignores.length; i++) {
-    if (string.includes(ignores[i])) {
+    if (str.includes(ignores[i])) {
       specialties.push({ temp: `%specialties${i}%`, value: ignores[i] });
-      string.replace(ignores[i], `%specialties${i}%`);
+      str = str.replace(ignores[i], `%specialties${i}%`);
     }
   }
-  console.log(specialties);
-  let str = string
-    .split(" ")
+
+  const splitString = title ? str.split(" ") : str.split(".");
+
+  str = splitString
     .map((word) => {
       if (word.trim().length > 0) {
-        return `${word?.trim()?.[0]?.toUpperCase()}${word?.trim()?.slice(1)}`;
+        const temp = `${word?.trim()?.[0]?.toUpperCase()}${word
+          ?.trim()
+          ?.slice(1)}`;
+        return title ? temp : `${temp}.`;
       }
       return "";
     })
     .join(" ")
     .trim();
 
-  for (let i = 0; i < specialties.length; i++) {
-    if (str.includes(specialties[i].temp)) {
-      str.replace(specialties[i].temp, specialties[i].value);
+  if (specialties.length > 0) {
+    for (let i = 0; i < specialties.length; i++) {
+      if (str.includes(specialties[i].temp)) {
+        str = str.replace(specialties[i].temp, specialties[i].value);
+      }
     }
   }
 
   return str;
 }
 
-const ignores = ["e.g.", "Node.Js"];
+const ignores = ["e.g.", "Node.js"];
