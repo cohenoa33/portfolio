@@ -1,5 +1,5 @@
 import { titleize } from "../helpers";
-import information from "../data/information";
+import { work, education } from "../data";
 
 const Resume = () => {
   return (
@@ -9,9 +9,9 @@ const Resume = () => {
         <div className="download">
           <a
             className="download"
-            href={process.env.REACT_APP_URL}
+            href={`/Noa-Rabin-Cohen-Resume.pdf`}
             rel="noreferrer"
-            target="_blank"
+            target="_self"
             download
           >
             {" "}
@@ -22,7 +22,7 @@ const Resume = () => {
         </div>
         <div className="resume">
           <h3>EDUCATION</h3>
-          {information.education.map((school) => (
+          {education.map((school) => (
             <div className="roles-experience" key={school.school}>
               <span>{school.school}</span>
               <p className="role-experience-title">
@@ -33,14 +33,14 @@ const Resume = () => {
             </div>
           ))}
           <h3>PROFESSIONAL EXPERIENCE</h3>
-          {information.work.map((work) => (
+          {work.map((work) => (
             <div className="roles-experience" key={work.title}>
               <span>{work.title}</span>
               <p className="role-experience-title">
                 {work.company} • {work.location} • {work.years}
               </p>
               <p className="roles-experience-about">{work.about}</p>
-              {work.job_description.map((role, index) => {
+              {work.job_description?.map((role, index) => {
                 return role?.title ? (
                   <div key={`${role.title}-"role${index}`}>
                     <span className="title">

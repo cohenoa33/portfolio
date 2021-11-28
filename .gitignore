@@ -24,6 +24,10 @@ yarn-error.log*
 
 /not_used_components
 
+# data
+/src/data
+/src/images
+/public/Noa-Rabin-Cohen-Resume.pdf
 .eslintcache
 .env
 
