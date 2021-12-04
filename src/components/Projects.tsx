@@ -1,12 +1,11 @@
-import React from "react";
-import information from "../data/information";
-import YouTube from "./YouTube";
+import { projects } from "../data";
+import { YouTube } from "./";
 
-export default function Projects() {
+export function Projects() {
   return (
     <section id="projects">
       <h2>PROJECTS</h2>
-      {information.projects.map((project) => (
+      {projects.map((project) => (
         <div key={project.name} className="project-div">
           <h3 className="title">{project.name}</h3>
           <div className="github-live">

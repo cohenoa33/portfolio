@@ -1,13 +1,12 @@
-import React from "react";
-import information from "../data/information";
+import { skills } from "../data";
 
-const Skills = () => {
+export function Skills() {
   return (
     <>
       <section id="skills">
         <h2>TECHNICAL SKILLS </h2>
         <ul className="skills">
-          {information.skills
+          {skills
             .sort((a, b) => a.name.localeCompare(b.name))
             .map((skill) => (
               <li className="skills-item" key={skill.name}>
@@ -18,6 +17,4 @@ const Skills = () => {
       </section>
     </>
   );
-};
-
-export default Skills;
+}

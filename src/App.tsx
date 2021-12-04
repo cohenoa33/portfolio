@@ -1,31 +1,27 @@
 import React from "react";
 import "./App.css";
 import { HashRouter } from "react-router-dom";
-
-import Home from "./components/Home";
-import Contact from "./components/Contact";
-import Resume from "./components/Resume";
-import Social from "./components/Social";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
+import { Home, Contact, Resume, Social, Projects, Skills } from "./components";
 
 class App extends React.Component {
   componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
+    window.addEventListener("scroll", this.handleScroll, { passive: true });
   }
 
   componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
+    window.removeEventListener("scroll", this.handleScroll, false);
   }
 
   handleScroll() {
+    let navbar = document.getElementById("navbar");
+    if (!navbar) return;
     if (
       document.body.scrollTop > 20 ||
       document.documentElement.scrollTop > 20
     ) {
-      document.getElementById("navbar").style.top = "0";
+      navbar.style.top = "0";
     } else {
-      document.getElementById("navbar").style.top = "-50px";
+      navbar.style.top = "-50px";
     }
   }
 
