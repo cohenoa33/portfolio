@@ -1,6 +1,6 @@
 import image from "../images/profilepic.jpg";
 
-function Home() {
+export function Home() {
   return (
     <section id="about">
       <br />
@@ -25,5 +25,3 @@ function Home() {
     </section>
   );
 }
-
-export default Home;

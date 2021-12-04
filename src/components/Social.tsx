@@ -5,7 +5,7 @@ import {
   faLinkedin
 } from "@fortawesome/free-brands-svg-icons";
 
-export default function Social() {
+export function Social() {
   const size = "2x";
   const color = "#f2f2f2";
   return (

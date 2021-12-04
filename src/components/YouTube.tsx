@@ -1,4 +1,4 @@
-export default function YouTube({ videoId }: Props) {
+export function YouTube({ videoId }: Props) {
   return (
     <div className="video">
       <iframe

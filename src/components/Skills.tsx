@@ -1,6 +1,6 @@
 import { skills } from "../data";
 
-const Skills = () => {
+export function Skills() {
   return (
     <>
       <section id="skills">
@@ -17,6 +17,4 @@ const Skills = () => {
       </section>
     </>
   );
-};
-
-export default Skills;
+}

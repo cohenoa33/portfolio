@@ -1,8 +1,7 @@
 import { projects } from "../data";
+import { YouTube } from "./";
 
-import YouTube from "./YouTube";
-
-export default function Projects() {
+export function Projects() {
   return (
     <section id="projects">
       <h2>PROJECTS</h2>

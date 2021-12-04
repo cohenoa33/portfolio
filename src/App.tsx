@@ -1,13 +1,7 @@
 import React from "react";
 import "./App.css";
 import { HashRouter } from "react-router-dom";
-
-import Home from "./components/Home";
-import Contact from "./components/Contact";
-import Resume from "./components/Resume";
-import Social from "./components/Social";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
+import { Home, Contact, Resume, Social, Projects, Skills } from "./components";
 
 class App extends React.Component {
   componentDidMount() {

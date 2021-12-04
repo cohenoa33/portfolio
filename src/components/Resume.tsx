@@ -1,7 +1,7 @@
 import { titleize } from "../helpers";
 import { work, education } from "../data";
 
-const Resume = () => {
+export function Resume() {
   return (
     <>
       <section id="resume">
@@ -66,6 +66,4 @@ const Resume = () => {
       </section>
     </>
   );
-};
-
-export default Resume;
+}
