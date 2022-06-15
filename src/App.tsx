@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 import { HashRouter } from "react-router-dom";
 import { Home, Contact, Resume, Social, Projects, Skills } from "./components";
 

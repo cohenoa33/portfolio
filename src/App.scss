@@ -6,12 +6,19 @@
   background-image: linear-gradient(to right, rgb(53, 53, 53), rgb(93, 93, 93));
   box-shadow: inset 0 0 50px rgb(104, 104, 104);
   
-
 }
 
 
+$link-hover: #2B7A78;
+  $link-color: #3AAFA9;
+  $white: #FEFFFF;
+  $black: #17252A;
+  $text: #DEF2F1;
+
+
+
 #navbar {
-  background-color: #2b2b2b;
+  background-color: $black;
   position: fixed;
   top: -0;
   width: 100%;
@@ -23,7 +30,7 @@
 
 #navbar a {
   display: inline-block;
-  color: #f2f2f2;
+  color: $text;
   align-self: start;
   text-align: center;
   padding: 10px;
@@ -33,8 +40,8 @@
 }
 
 #navbar a:hover {
-  background-color: #f2f2f2;
-  color: #2b2b2b;
+  background-color: $text;
+  color: $black;
 }
 
 #social-menu {
@@ -50,12 +57,12 @@ ul#social-menu {
   list-style: none;
 }
 svg {
-  color:  rgb(96, 194, 161);
+  color:  $link-color;
   margin-top: 10px;
   border-radius: 5px;
 }
 svg:hover {
-  color: aquamarine;
+  color: $link-hover;
 }
 
 #about {
@@ -65,11 +72,11 @@ svg:hover {
   background-position: center;
   background-repeat: no-repeat; 
   background-size: cover;
-  background-color: #cccccc;
+  background-color:$link-hover;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #f2f2f2;
+  color: $text;
   text-align: justify;
 
     -webkit-background-size: cover;
@@ -100,7 +107,7 @@ svg:hover {
   margin-top: 50px;
   margin-bottom: 0px;
   text-align: center;
-  color:  #2b2b2b;
+  color:  $black;
   text-shadow: 3px 3px 6px #707070;
 
 }
@@ -111,7 +118,7 @@ svg:hover {
   font-size: 2rem;
   font-weight: bold !important;
    text-align: center;
-  color:  #2b2b2b;
+  color:  $black;
   text-shadow: 3px 3px 6px #707070;
 }
 .about {
@@ -119,7 +126,7 @@ svg:hover {
   display: grid;
   grid-template-columns: 80% 20%;
   float: center;
-  background-color: #2b2b2b;
+  background-color: $black;
   margin-bottom: 100px;
 }
 .about-text {
@@ -205,24 +212,29 @@ iframe {
 }
 
 .github,
-.github:visited,
-.github:hover {
+.github:visited {
   cursor: pointer;
   padding-top: 0;
   margin-top: 0;
   margin: 0 auto;
-  color: darkgrey;
+  color: $link-color;
   text-align: center;
+  font-weight: 700;
 }
 .live,
-.live:visited,
-.live:hover {
+.live:visited
+{
   cursor: pointer;
+  color: $link-color;
   padding-top: 0;
   margin-top: 0;
   margin-left: 5px;
-  color: darkgrey;
   text-align: center;
+  font-weight: 700;
+}
+.github:hover,
+.live:hover {
+  color: $link-hover;
 }
 
 #projects li {
@@ -246,7 +258,7 @@ iframe {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #f2f2f2;
+  color: $text;
   text-align: center;
   padding-top: 50px;
 
@@ -277,7 +289,7 @@ iframe {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #f2f2f2;
+  color: $text;
   text-align: center;
   padding-top: 50px;
   width: 70%;
@@ -291,11 +303,14 @@ iframe {
 }
 a.download {
   color: white;
-  background-color: #2b2b2b;
+  background-color: $link-color;
   text-decoration: none;
   text-align: center;
   font-size: 1.2em;
   margin-top: 30px;
+}
+a.download:hover {
+  background-color: $link-hover;
 }
 .resume {
   margin: 0 auto;
@@ -303,7 +318,7 @@ a.download {
   width: 70%;
   margin-bottom: 30px;
   background-color: white;
-  color: #2b2b2b;
+  color: $black;
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -360,7 +375,7 @@ span.description {
   line-height: 1.15em;
   display: flex;
   align-items: center;
-  color: #2b2b2b;
+  color: $black;
   text-align: center;
   margin-top: 50px;
 }
@@ -382,13 +397,13 @@ span.description {
 }
 
 #contact a {
-  color:  rgb(96, 194, 161);;
+  color:  $link-color;;
   text-decoration: none;
   cursor: pointer;
   word-break: break-word;
 }
 #contact a:hover {
-  color: aquamarine;
+  color: $link-hover;
 }
 
 @media only screen and (max-width: 760px),
@@ -410,7 +425,7 @@ span.description {
   }
   .about-text {
     width: 100%;
-    background-color: #2b2b2b;
+    background-color: $black;
     padding: 20px;
     margin: 0 auto;
     line-height: 1.5rem;
