@@ -18,20 +18,8 @@ export function Projects() {
               GitHub
             </a>{" "}
             <br />
-            {project.live ? (
-              <a
-                target="_blank"
-                className="live"
-                href={project.live}
-                rel="noreferrer"
-              >
-                Live Demo App
-              </a>
-            ) : null}
           </div>
-
           <YouTube videoId={project.demo} />
-
           <ul className="project-description">
             {project.description.map((value) => (
               <li key={value}>{value}</li>
