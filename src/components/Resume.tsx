@@ -9,7 +9,7 @@ export function Resume() {
         <div className="download">
           <a
             className="download"
-            href={`/Noa-Rabin-Cohen-Resume.pdf`}
+            href={`/Noa_Rabin-Cohen_Resume.pdf`}
             rel="noreferrer"
             target="_self"
             download
