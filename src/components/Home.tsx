@@ -1,11 +1,9 @@
-import image from "../images/profilepic.jpg";
-
 export function Home() {
   return (
     <section id="about">
       <br />
       <h1>
-        NOA <span className="lastName">RABIN-COHEN</span>
+        NOA <span className="last-name">RABIN-COHEN</span>
       </h1>
       <h2>SOFTWARE DEVELOPER</h2>
       <div className="about">
@@ -20,7 +18,6 @@ export function Home() {
           Recognized by colleagues and supervisors for amazing customer service
           and organizational skills.
         </div>
-        <img src={image} className="profile-pic" alt="Profile" />
       </div>
     </section>
   );

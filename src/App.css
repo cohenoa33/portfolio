@@ -99,7 +99,7 @@ svg:hover {
 }
 
 #about h1 {
-  font-size: 3.75rem;
+  font-size: 6rem;
   font-weight: bold !important;
   margin-top: 50px;
   margin-bottom: 0px;
@@ -107,7 +107,7 @@ svg:hover {
   color: #17252a;
   text-shadow: 3px 3px 6px #707070;
 }
-.lastName {
+.last-name {
   display: inline-block;
 }
 #about h2 {
@@ -119,17 +119,17 @@ svg:hover {
 }
 .about {
   width: 60%;
-  display: grid;
-  grid-template-columns: 80% 20%;
+  /* display: grid;
+  grid-template-columns: 80% 20%; */
   float: center;
   background-color: #17252a;
   margin-bottom: 100px;
 }
 .about-text {
-  width: 90%;
+  width: 100%;
   padding: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
   margin: 0 auto;
   line-height: 2rem;
   font-size: 1.15rem;
