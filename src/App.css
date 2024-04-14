@@ -47,12 +47,12 @@ ul#social-menu {
   list-style: none;
 }
 svg {
-  color: #3aafa9;
+  color: #cdc013;
   margin-top: 10px;
   border-radius: 5px;
 }
 svg:hover {
-  color: #2b7a78;
+  color: #cbbe1076;
 }
 
 #about {
@@ -62,7 +62,7 @@ svg:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #2b7a78;
+  background-color: #cdc013;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -105,7 +105,7 @@ svg:hover {
   margin-bottom: 0px;
   text-align: center;
   color: #17252a;
-  text-shadow: 3px 3px 6px #707070;
+  text-shadow: 1px 1px 3px #cdc013;
 }
 .last-name {
   display: inline-block;
@@ -115,12 +115,10 @@ svg:hover {
   font-weight: bold !important;
   text-align: center;
   color: #17252a;
-  text-shadow: 3px 3px 6px #707070;
+  text-shadow: 1px 1px 3px #cdc013;
 }
 .about {
   width: 60%;
-  /* display: grid;
-  grid-template-columns: 80% 20%; */
   float: center;
   background-color: #17252a;
   margin-bottom: 100px;
@@ -128,8 +126,7 @@ svg:hover {
 .about-text {
   width: 100%;
   padding: 50px;
-  /* padding-left: 20px;
-  padding-right: 20px; */
+
   margin: 0 auto;
   line-height: 2rem;
   font-size: 1.15rem;
@@ -213,14 +210,14 @@ iframe {
   padding-top: 0;
   margin-top: 0;
   margin: 0 auto;
-  color: #3aafa9;
+  color: #cdc013;
   text-align: center;
   font-weight: 700;
 }
 .live,
 .live:visited {
   cursor: pointer;
-  color: #3aafa9;
+  color: #cdc013;
   padding-top: 0;
   margin-top: 0;
   margin-left: 5px;
@@ -229,7 +226,7 @@ iframe {
 }
 .github:hover,
 .live:hover {
-  color: #2b7a78;
+  color: #cbbe1076;
 }
 
 #projects li {
@@ -293,15 +290,15 @@ iframe {
   width: 50%;
 }
 a.download {
-  color: white;
-  background-color: #3aafa9;
+  color: #17252a;
+  background-color: #cdc013;
   text-decoration: none;
   text-align: center;
   font-size: 1.2em;
   margin-top: 30px;
 }
 a.download:hover {
-  background-color: #2b7a78;
+  background-color: #cbbe1076;
 }
 .resume {
   margin: 0 auto;
@@ -326,7 +323,7 @@ a.download:hover {
   font-weight: bold;
   display: block;
   font-size: 1.1em;
-  color: darkgrey;
+  color: rgb(124, 124, 124);
   text-decoration: underline;
 }
 .role-experience-title {
@@ -344,7 +341,7 @@ a.download:hover {
 }
 span.title {
   font: inherit;
-  color: darkgrey;
+  color: rgb(78, 75, 56);
   font-size: 1.1rem;
   line-height: 1.3em;
   padding: 0;
@@ -388,13 +385,13 @@ span.description {
 }
 
 #contact a {
-  color: #3aafa9;
+  color: #cdc013;
   text-decoration: none;
   cursor: pointer;
   word-break: break-word;
 }
 #contact a:hover {
-  color: #2b7a78;
+  color: #cbbe1076;
 }
 
 @media only screen and (max-width: 760px),
