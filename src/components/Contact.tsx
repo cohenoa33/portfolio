@@ -3,7 +3,7 @@ export function Contact({ section }: Props) {
     <div className="contact">
       <h2>Contact Me</h2>
       <div className="contact-details">
-        <span className="details">Noa Rabin-Cohen</span>
+        <span className="details">Noa Rabin Cohen</span>
         <br />
         <span className="details">Kirkland, Washington 98034</span>
         <br />

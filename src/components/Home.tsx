@@ -3,7 +3,7 @@ export function Home() {
     <section id="about">
       <br />
       <h1>
-        NOA <span className="last-name">RABIN-COHEN</span>
+        NOA <span className="last-name">RABIN COHEN</span>
       </h1>
       <h2>SOFTWARE DEVELOPER</h2>
       <div className="about">
