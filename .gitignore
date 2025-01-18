@@ -29,7 +29,7 @@ yarn-error.log*
 /src/images
 /public/Noa_Rabin-Cohen_Resume.pdf
 
-``
+# cache
 .eslintcache
 .env
 
