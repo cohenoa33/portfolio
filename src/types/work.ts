@@ -4,9 +4,10 @@ export interface Work {
   years: string;
   location: string;
   about?: string;
-  job_description: Job[];
+  jobDescription: Job[];
 }
 interface Job {
   title?: string;
   description: string;
+  id: string;
 }

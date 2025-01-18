@@ -3,7 +3,7 @@ import { work, education } from "../data";
 
 export function Resume() {
   return (
-    <>
+
       <section id="resume">
         <h2>Resume</h2>
         <div className="download">
@@ -40,9 +40,9 @@ export function Resume() {
                 {work.company} • {work.location} • {work.years}
               </p>
               <p className="roles-experience-about">{work.about}</p>
-              {work.job_description?.map((role, index) => {
+              {work.jobDescription?.map((role) => {
                 return role?.title ? (
-                  <div key={`${role.title}-"role${index}`}>
+                  <div key={`${role.title}-"role${role.id}`}>
                     <span className="title">
                       • {titleize(role.title, true)}:
                     </span>{" "}
@@ -51,7 +51,7 @@ export function Resume() {
                     </span>
                   </div>
                 ) : (
-                  <div key={`description-"role${index}`}>
+                  <div key={`description-role-${role.id}`}>
                     <span className="description">
                       • {titleize(role.description)}
                     </span>
@@ -64,6 +64,6 @@ export function Resume() {
           <br />
         </div>
       </section>
-    </>
+
   );
 }

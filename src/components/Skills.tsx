@@ -1,8 +1,7 @@
 import { skills } from "../data";
 
-export function Skills() {
+export function Skills():JSX.Element {
   return (
-    <>
       <section id="skills">
         <h2>TECHNICAL SKILLS </h2>
         <ul className="skills">
@@ -15,6 +14,6 @@ export function Skills() {
             ))}
         </ul>
       </section>
-    </>
+ 
   );
 }
