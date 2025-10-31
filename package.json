@@ -4,20 +4,23 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.5.1",
-    "@fortawesome/free-brands-svg-icons": "^6.5.1",
-    "@fortawesome/free-solid-svg-icons": "^6.5.1",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "@types/node": "^16.11.10",
-    "@types/react": "^18.2.55",
-    "@types/react-dom": "^18.2.19",
-    "gh-pages": "^3.1.0",
+    "@fortawesome/fontawesome-svg-core": "6.6.0",
+    "@fortawesome/free-brands-svg-icons": "6.6.0",
+    "@fortawesome/free-solid-svg-icons": "6.6.0",
+    "@fortawesome/react-fontawesome": "0.2.2",
+    "@types/react": "18.3.26",
+    "@types/react-dom": "18.3.7",
+    "gh-pages": "^6.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^5.2.0",
+    "react-router-dom": "^6",
     "react-scripts": "^5.0.1",
     "typescript": "^4.1.6",
     "web-vitals": "^0.2.4"
+  },
+  "resolutions": {
+    "@types/react": "18.3.26",
+    "@types/react-dom": "18.3.7"
   },
   "scripts": {
     "predeploy": "yarn run build",
@@ -25,7 +28,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "preview": "serve -s build",
+    "typecheck": "tsc --noEmit"
   },
   "eslintConfig": {
     "extends": [
@@ -46,7 +51,10 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@types/react-router-dom": "^5.3.2"
+    "@types/node": "18",
+    "serve": "^14.2.5"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
