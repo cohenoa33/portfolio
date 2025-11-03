@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faMedium,
   faGithub,
   faLinkedin
 } from "@fortawesome/free-brands-svg-icons";
@@ -25,15 +24,7 @@ export function Social() {
             <FontAwesomeIcon icon={faLinkedin} size={size} color={color} />
           </li>
         </a>
-        <a
-          href="https://cohenoa33.medium.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <li className="social-menu">
-            <FontAwesomeIcon icon={faMedium} size={size} color={color} />
-          </li>
-        </a>
+    
       </ul>
     </div>
   );

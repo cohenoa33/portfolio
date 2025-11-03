@@ -32,7 +32,7 @@ class App extends React.Component {
           <div id="navbar">
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
+            {/* <a href="#projects">Projects</a> */}
             <a href="#resume">Resume</a>
             <a href="#contact">Contact</a>
           </div>
@@ -40,8 +40,8 @@ class App extends React.Component {
             <Social />
             <Home />
             <Skills />
-            <Projects />
             <Resume />
+            {/* <Projects /> */}
             <Contact section="contact" />
           </div>
         </div>

@@ -7,7 +7,7 @@ export function Resume() {
       <section id="resume">
         <h2>Resume</h2>
         <div className="download">
-          <a
+          {/* <a
             className="download"
             href={`/Noa_Rabin-Cohen_Resume.pdf`}
             rel="noreferrer"
@@ -17,7 +17,7 @@ export function Resume() {
             {" "}
             Download PDF
             <i className="fa fa-download"> </i>
-          </a>
+          </a> */}
           <br />
         </div>
         <div className="resume">
