@@ -1,3 +1,10 @@
+:root {
+  --color-accent: #cdc013;
+  --color-secondary: #def2f1;
+  --color-primary: #17252a;
+
+}
+
 * {
   box-sizing: border-box;
   font-family: "Inconsolata";
@@ -8,7 +15,7 @@
 }
 
 #navbar {
-  background-color: #17252a;
+  background-color: var(--color-primary);
   position: fixed;
   top: -0;
   width: 100%;
@@ -20,7 +27,7 @@
 
 #navbar a {
   display: inline-block;
-  color: #def2f1;
+  color: var(--color-secondary);
   align-self: start;
   text-align: center;
   padding: 10px;
@@ -30,8 +37,8 @@
 }
 
 #navbar a:hover {
-  background-color: #def2f1;
-  color: #17252a;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 #social-menu {
@@ -47,7 +54,7 @@ ul#social-menu {
   list-style: none;
 }
 svg {
-  color: #cdc013;
+  color:  var(--color-accent);
   margin-top: 10px;
   border-radius: 5px;
 }
@@ -62,11 +69,11 @@ svg:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #cdc013;
+  background-color:  var(--color-accent);
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #def2f1;
+  color: var(--color-secondary);
   text-align: justify;
 
   -webkit-background-size: cover;
@@ -104,29 +111,34 @@ svg:hover {
   margin-top: 50px;
   margin-bottom: 0px;
   text-align: center;
-  color: #17252a;
-  text-shadow: 1px 1px 3px #cdc013;
+  color: var(--color-primary);
+  text-shadow: 5px 5px 3px  var(--color-accent);
 }
+
 .last-name {
   display: inline-block;
 }
+
 #about h2 {
   font-size: 2rem;
   font-weight: bold !important;
   text-align: center;
-  color: #17252a;
-  text-shadow: 1px 1px 3px #cdc013;
+  color: var(--color-primary);
+  text-shadow: 2px 1px 1px #6b6e70;
+  padding: 0;
+  margin: 10px;
 }
 .about {
   width: 60%;
   float: center;
-  background-color: #17252a;
+  background-color: var(--color-primary);
+  margin-top: 50px;
   margin-bottom: 100px;
 }
+
 .about-text {
   width: 100%;
   padding: 50px;
-
   margin: 0 auto;
   line-height: 2rem;
   font-size: 1.15rem;
@@ -210,14 +222,14 @@ iframe {
   padding-top: 0;
   margin-top: 0;
   margin: 0 auto;
-  color: #cdc013;
+  color:  var(--color-accent);
   text-align: center;
   font-weight: 700;
 }
 .live,
 .live:visited {
   cursor: pointer;
-  color: #cdc013;
+  color:  var(--color-accent);
   padding-top: 0;
   margin-top: 0;
   margin-left: 5px;
@@ -250,7 +262,7 @@ iframe {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #def2f1;
+  color: var(--color-secondary);
   text-align: center;
   padding-top: 50px;
 }
@@ -277,7 +289,7 @@ iframe {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #def2f1;
+  color: var(--color-secondary);
   text-align: center;
   padding-top: 50px;
   width: 70%;
@@ -290,8 +302,8 @@ iframe {
   width: 50%;
 }
 a.download {
-  color: #17252a;
-  background-color: #cdc013;
+  color: var(--color-primary);
+  background-color:  var(--color-accent);
   text-decoration: none;
   text-align: center;
   font-size: 1.2em;
@@ -306,7 +318,7 @@ a.download:hover {
   width: 70%;
   margin-bottom: 30px;
   background-color: white;
-  color: #17252a;
+  color: var(--color-primary);
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -363,7 +375,7 @@ span.description {
   line-height: 1.15em;
   display: flex;
   align-items: center;
-  color: #17252a;
+  color: var(--color-primary);
   text-align: center;
   margin-top: 50px;
 }
@@ -375,20 +387,22 @@ span.description {
   padding-left: 30px;
 }
 .contact-details {
-  line-height: 1.45rem;
-  padding-top: 30px;
-  padding-bottom: 50px;
+margin-bottom: 50px;;
+padding: 10px;
 }
 .details {
   font-size: 1.25rem;
   color: white;
+  font-weight: bold;
 }
 
 #contact a {
-  color: #cdc013;
+  color:  var(--color-accent);
   text-decoration: none;
   cursor: pointer;
   word-break: break-word;
+    font-weight: normal;
+    padding-left: 10px;
 }
 #contact a:hover {
   color: #cbbe1076;
@@ -413,7 +427,7 @@ span.description {
   }
   .about-text {
     width: 100%;
-    background-color: #17252a;
+    background-color: var(--color-primary);
     padding: 20px;
     margin: 0 auto;
     line-height: 1.5rem;
@@ -473,9 +487,21 @@ span.description {
     width: 100%;
   }
   .contact {
-    width: 70%;
+    width: 79%;
+    padding-left: 0;
   }
   .skills {
     font-size: 100%;
   }
+
+.contact-details {
+padding: 1px;
+}
+.details {
+  font-size: 1rem;
+}
+
+#contact a {
+    padding-left: 0;
+}
 }

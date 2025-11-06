@@ -29,11 +29,11 @@ class App extends React.Component {
     return (
       <HashRouter>
         <div>
-          <div id="navbar">
+          <div id="navbar" role="navigation" aria-label="Main navigation">
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
-            {/* <a href="#projects">Projects</a> */}
             <a href="#resume">Resume</a>
+            {/* <a href="#projects">Projects</a> */}
             <a href="#contact">Contact</a>
           </div>
           <div className="App">

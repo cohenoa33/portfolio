@@ -10,20 +10,20 @@ export function Social() {
   return (
     <div>
       <ul id="social-menu">
-        <a href="https://github.com/cohenoa33" target="_blank" rel="noreferrer">
           <li className="social-menu">
+        <a href="https://github.com/cohenoa33" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faGithub} size={size} color={color} />
-          </li>
         </a>
+          </li>
+          <li className="social-menu">
         <a
           href="https://www.linkedin.com/in/noa-rabin-cohen"
           target="_blank"
           rel="noreferrer"
         >
-          <li className="social-menu">
             <FontAwesomeIcon icon={faLinkedin} size={size} color={color} />
-          </li>
         </a>
+          </li>
     
       </ul>
     </div>

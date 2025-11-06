@@ -1,19 +1,42 @@
 export function Contact({ section }: Props) {
   let contact: JSX.Element = (
     <div className="contact">
-      <h2>Contact Me</h2>
+      <h2>Let's Connect</h2>
       <div className="contact-details">
-        <span className="details">Noa Rabin Cohen</span>
-        <br />
-        <span className="details">Kirkland, Washington 98034</span>
-        <br />
-        <span>
-          {" "}
-          <a href="mailto: me@noarabincohen.com" className="details">
-            Me@noarabincohen.com
+        <p className="details">
+          Email:{" "}
+          <a
+            href="mailto:me@noarabincohen.com"
+            className="details"
+            aria-label="Email Noa Rabin Cohen"
+          >
+            me@noarabincohen.com
           </a>
-        </span>
-        <br />
+        </p>
+        <p className="details">
+          LinkedIn:{" "}
+          <a
+            href="https://www.linkedin.com/in/noa-rabin-cohen/"
+            className="details"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Visit LinkedIn profile"
+          >
+            linkedin.com/in/noa-rabin-cohen
+          </a>
+        </p>
+        <p className="details">
+          GitHub:{" "}
+          <a
+            href="https://github.com/cohenoa33"
+            className="details"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Visit GitHub profile"
+          >
+            github.com/cohenoa33
+          </a>
+        </p>
       </div>
     </div>
   );
