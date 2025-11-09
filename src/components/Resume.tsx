@@ -6,8 +6,6 @@ export function Resume() {
     <section id="resume">
       <h2>Resume</h2>
       <div className="download">
-    
-
         <a
           className="download"
           href="/Noa_Rabin_Cohen_Full-Stack_Software_Engineer_Resume.pdf"
@@ -25,10 +23,8 @@ export function Resume() {
           <div className="roles-experience" key={school.school}>
             <span>{school.school}</span>
             <p className="role-experience-title">
-              {school.degree} • {school.graduated} • {school.location}
+              {school.degree} • {school.location}
             </p>
-            <p className="roles-experience-about">{school.description}</p>
-            <br />
           </div>
         ))}
         <h3>PROFESSIONAL EXPERIENCE</h3>
@@ -38,7 +34,7 @@ export function Resume() {
             <p className="role-experience-title">
               {work.company} • {work.location} • {work.years}
             </p>
-            <p className="roles-experience-about">{work.about}</p>
+
             {work.jobDescription?.map((role) => {
               return role?.title ? (
                 <div key={`${role.title}-"role${role.id}`}>
@@ -65,7 +61,7 @@ export function Resume() {
             <p className="role-experience-title">
               {work.company} • {work.location} • {work.years}
             </p>
-            <p className="roles-experience-about">{work.about}</p>
+
             {work.jobDescription?.map((role) => {
               return role?.title ? (
                 <div key={`${role.title}-"role${role.id}`}>

@@ -3,7 +3,6 @@ export interface Work {
   title: string;
   years: string;
   location: string;
-  about?: string;
   jobDescription: Job[];
 }
 interface Job {

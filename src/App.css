@@ -344,13 +344,7 @@ a.download:hover {
   color: #2f2f2f;
   font-weight: bold;
 }
-.roles-experience-about {
-  display: block;
-  line-height: 1.4em;
-  text-align: justify;
-  font-weight: normal;
-  font-size: 0.9rem;
-}
+
 span.title {
   font: inherit;
   color: rgb(78, 75, 56);
@@ -388,12 +382,17 @@ span.description {
 }
 .contact-details {
 margin-bottom: 50px;;
-padding: 10px;
+padding: 10px 0;
+
 }
+
 .details {
   font-size: 1.25rem;
   color: white;
   font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  width:450px;
 }
 
 #contact a {
@@ -401,13 +400,28 @@ padding: 10px;
   text-decoration: none;
   cursor: pointer;
   word-break: break-word;
-    font-weight: normal;
-    padding-left: 10px;
+  font-weight: normal;
+  padding-left: 10px;
+
 }
 #contact a:hover {
   color: #cbbe1076;
 }
 
+@media only screen and (max-width: 1450px){
+  .resume {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 1060px){
+.resume {
+    width: 95%;
+  }
+.details {
+ font-size: 1rem;
+  width:350px;
+}
+}
 @media only screen and (max-width: 760px),
   (min-device-width: 768px) and (max-device-width: 1024px) {
   .App {
@@ -499,6 +513,7 @@ padding: 1px;
 }
 .details {
   font-size: 1rem;
+  width:350px;
 }
 
 #contact a {
