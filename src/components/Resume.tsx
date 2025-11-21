@@ -59,7 +59,7 @@ export function Resume() {
           <div className="roles-experience" key={work.title}>
             <span>{work.title}</span>
             <p className="role-experience-title">
-              {work.company} • {work.location} • {work.years}
+              {work.company} 
             </p>
 
             {work.jobDescription?.map((role) => {
