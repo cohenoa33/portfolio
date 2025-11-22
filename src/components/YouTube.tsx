@@ -1,4 +1,6 @@
-export function YouTube({ videoId }: Props): JSX.Element {
+import { ReactElement } from "react";
+
+export function YouTube({ videoId }: Props): ReactElement {
   return (
     <div className="video">
       <iframe
