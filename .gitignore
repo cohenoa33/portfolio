@@ -26,8 +26,9 @@ yarn-error.log*
 
 # data
 /src/data
+
 /src/images
-/public/Noa_Rabin-Cohen_Resume.pdf
+/public/resume.pdf
 /public/Noa_Rabin_Cohen_Full-Stack_Software_Engineer_Resume.pdf
 
 # cache
