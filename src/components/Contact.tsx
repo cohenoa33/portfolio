@@ -1,5 +1,7 @@
+import { ReactElement } from "react";
+
 export function Contact({ section }: Props) {
-  let contact: JSX.Element = (
+  let contact: ReactElement = (
     <div className="contact">
       <h2>Let's Connect</h2>
       <div className="contact-details">
