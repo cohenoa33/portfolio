@@ -42,7 +42,8 @@ export function Contact() {
               {contactInfo.map((item) => (
                 <div
                   key={item.label}
-                  className="group flex items-center justify-between p-6 flex-col gap-4">
+                  className="group flex items-center justify-between p-6 flex-col gap-4"
+                >
                   <div className="flex items-start gap-4 w-full xs:w-auto">
                     <div className="p-3 border border-black group-hover:bg-black group-hover:text-white transition-colors">
                       {icons[item.icon]}
@@ -90,6 +91,9 @@ export function Contact() {
                     </div>
                   </div>
                   <ExternalLink className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                  <span className="sr-only">
+                    {item.span}
+                  </span>
                 </a>
               ))}
             </div>

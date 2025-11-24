@@ -3,25 +3,14 @@ import { about } from "../data";
 
 export function Hero() {
   const handleDownloadResume = () => {
-
-    const resumeUrl = "/Noa_Rabin_Cohen_-_Full-Stack_Software_Engineer.pdf";
+  
     const link = document.createElement("a");
     link.href = resumeUrl;
     link.download = "Noa_Rabin_Cohen_-_Full-Stack_Software_Engineer.pdf";
     link.click();
   };
+  const resumeUrl = "/Noa_Rabin_Cohen_-_Full-Stack_Software_Engineer.pdf";
 
-  const handleClick = (
-    e: React.MouseEvent<Element>,
-    href: string
-  ) => {
-    e.preventDefault();
-    const targetId = href.replace("#", "");
-    const element = document.getElementById(targetId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
    return (
      <section
        id="home"
@@ -33,19 +22,22 @@ export function Hero() {
            {/* Large Name Display */}
            <div className="mb-12">
              <div className="overflow-hidden mb-2">
-               <h1 className="text-[clamp(3rem,12vw,10rem)] leading-[0.9] tracking-tighter">
+               <h1 className="text-[clamp(3rem,20vw,10rem)] md:text-[clamp(3rem,12vw,10rem)] leading-[0.9] tracking-tighter">
                  NOA
+                 <span className="sr-only">
+                   Rabin Cohen — Full-Stack Engineer in Seattle
+                 </span>
                </h1>
-             </div>
-             <div className="overflow-hidden mb-2">
-               <h1 className="text-[clamp(3rem,12vw,10rem)] leading-[0.9] tracking-tighter">
-                 RABIN
-               </h1>
-             </div>
-             <div className="overflow-hidden">
-               <h1 className="text-[clamp(3rem,12vw,10rem)] leading-[0.9] tracking-tighter">
-                 COHEN
-               </h1>
+               <div className="overflow-hidden mb-2">
+                 <div className="text-[clamp(3rem,20vw,10rem)] md:text-[clamp(3rem,12vw,10rem)] leading-[0.9] tracking-tighter font-medium">
+                   RABIN
+                 </div>
+               </div>
+               <div className="overflow-hidden">
+                 <div className="text-[clamp(3rem,20vw,10rem)] md:text-[clamp(3rem,12vw,10rem)] leading-[0.9] tracking-tighter font-medium">
+                   COHEN
+                 </div>
+               </div>
              </div>
            </div>
            {/* Bio Grid */}
@@ -57,16 +49,22 @@ export function Hero() {
                    About
                  </span>
                </div>
-               {about.map(p => <p className="text-lg leading-relaxed mb-2" key={p}>{p}</p>)}
-               <button
-                 onClick={handleDownloadResume}
-                 className="group relative px-8 py-4 border-2 border-black hover:bg-black hover:text-white transition-all duration-300 w-full md:w-auto"
-               >
-                 <span className="flex items-center justify-center gap-3 tracking-wider uppercase text-sm">
-                   <span>Download Resume</span>
-                   <Download className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
-                 </span>
-               </button>
+               {about.map((p) => (
+                 <p className="text-lg leading-relaxed mb-2" key={p}>
+                   {p}
+                 </p>
+               ))}
+               <a href={resumeUrl} download>
+                 <button
+                   onClick={handleDownloadResume}
+                   className="group relative px-8 py-4 border-2 border-black hover:bg-black hover:text-white transition-all duration-300 w-full md:w-auto"
+                 >
+                   <span className="flex items-center justify-center gap-3 tracking-wider uppercase text-sm">
+                     <span>Download Resume</span>
+                     <Download className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
+                   </span>
+                 </button>
+               </a>
              </div>
            </div>
          </div>
@@ -74,7 +72,7 @@ export function Hero() {
 
        {/* Scroll Indicator */}
        <div className="flex justify-center animate-bounce">
-         <ArrowDown className="w-6 h-6"  onClick={(e) => handleClick(e, "#skills")}/>
+         <ArrowDown className="w-6 h-6" />
        </div>
      </section>
    );

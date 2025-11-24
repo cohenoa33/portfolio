@@ -1,4 +1,4 @@
-import { skillCategories } from "../data";
+import { skillCategories, skillsGeneral } from "../data";
 import { ReactElement } from "react";
 
 
@@ -46,6 +46,10 @@ export function Skills() {
             </div>
           ))}
         </div>
+
+        <p className="mt-16 text-lg text-gray-400 max-w-3xl mx-auto text-center">
+          {skillsGeneral}
+        </p>
       </div>
     </section>
   );
