@@ -25,10 +25,15 @@ yarn-error.log*
 /not_used_components
 
 # data
-/src/data
+/src/data/education.ts
+/src/data/skills.ts
+/src/data/projects.ts       
+/src/data/work.ts   
+
 /src/images
-/public/Noa_Rabin-Cohen_Resume.pdf
+/public/resume.pdf
 /public/Noa_Rabin_Cohen_Full-Stack_Software_Engineer_Resume.pdf
+/public/Noa_Rabin_Cohen_-_Full-Stack_Software_Engineer.pdf
 
 # cache
 .eslintcache
