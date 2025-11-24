@@ -1,15 +1,18 @@
 # Noa Rabin Cohen Portfolio
 
 This repository contains the source code for my personal portfolio website, developed with **React**, **TypeScript**, and **Vite**.  
-The site presents my professional experience and is deployed via **GitHub Pages**.
+It’s deployed to production via **GitHub Pages** and uses **Vercel** for staging / preview deployments.
 
 ## Technology Stack
 
-- **React 18** with **TypeScript 5**
-- **Vite** for development and build tooling
-- **CSS** for styling and layout
-- **GitHub Pages** for hosting and deployment
-- Built with **Node 20 LTS**
+
+* **React 19 + React DOM 19**
+* **TypeScript 5.9**
+* **Vite 7** (dev server + production builds)
+* **Tailwind CSS 4 **(styling) + PostCSS / Autoprefixer
+* **lucide-react** and **react-icons** for UI icons
+* **gh-pages** for GitHub Pages deployment
+* **Node.js 20+** (per engines)
 
 ## Development Commands
 
@@ -25,6 +28,4 @@ The site presents my professional experience and is deployed via **GitHub Pages*
 Production builds are generated in the `dist/` directory and published to the `gh-pages` branch using the `gh-pages` package.  
 The live version of the site is available at [https://noarabincohen.com](https://noarabincohen.com).
 
----
-
-_Last updated November 2025 following migration from Create React App to Vite._
+Staging builds are deployed through Vercel from feature branches and pull requests, providing a preview URL for QA and SEO/social sharing checks.
