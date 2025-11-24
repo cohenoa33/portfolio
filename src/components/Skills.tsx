@@ -1,5 +1,4 @@
 import { skillCategories, skillsGeneral } from "../data";
-import { ReactElement } from "react";
 
 
 

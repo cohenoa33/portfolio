@@ -25,7 +25,10 @@ yarn-error.log*
 /not_used_components
 
 # data
-/src/data
+/src/data/education.ts
+/src/data/skills.ts
+/src/data/projects.ts       
+/src/data/work.ts   
 
 /src/images
 /public/resume.pdf
