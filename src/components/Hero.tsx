@@ -4,14 +4,24 @@ import { about } from "../data";
 export function Hero() {
   const handleDownloadResume = () => {
 
-    const resumeUrl =
-      "/resume.pdf";
+    const resumeUrl = "/Noa_Rabin_Cohen_-_Full-Stack_Software_Engineer.pdf";
     const link = document.createElement("a");
     link.href = resumeUrl;
-    link.download = "Noa_Rabin_Cohen_Full-Stack_Software_Engineer.pdf";
+    link.download = "Noa_Rabin_Cohen_-_Full-Stack_Software_Engineer.pdf";
     link.click();
   };
 
+  const handleClick = (
+    e: React.MouseEvent<Element>,
+    href: string
+  ) => {
+    e.preventDefault();
+    const targetId = href.replace("#", "");
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
    return (
      <section
        id="home"
@@ -64,7 +74,7 @@ export function Hero() {
 
        {/* Scroll Indicator */}
        <div className="flex justify-center animate-bounce">
-         <ArrowDown className="w-6 h-6" />
+         <ArrowDown className="w-6 h-6"  onClick={(e) => handleClick(e, "#skills")}/>
        </div>
      </section>
    );
