@@ -3,11 +3,8 @@ import { about } from "../data";
 
 export function Hero() {
   const handleDownloadResume = () => {
-  
-    const link = document.createElement("a");
-    link.href = resumeUrl;
-    link.download = "Noa_Rabin_Cohen_-_Full-Stack_Software_Engineer.pdf";
-    link.click();
+    // analytics only — no window.open, no fetch, no programmatic click
+    // e.g. track("resume_download");
   };
   const resumeUrl = "/Noa_Rabin_Cohen_-_Full-Stack_Software_Engineer.pdf";
 
