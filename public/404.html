@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, follow" />
+    <title>Page Not Found - Noa Rabin Cohen</title>
+    <meta
+      name="description"
+      content="This page was not found. Redirecting to the home page."
+    />
+    <link rel="canonical" href="https://noarabincohen.com/" />
+    <script type="text/javascript">
+      // GitHub Pages SPA redirect
+      // This script redirects 404 requests to the home page
+      // The segment count determines how deep the path is
+      var segmentCount = 0;
+      var l = window.location;
+
+      // If there are 2 query params and no hash, it's our redirect
+      if (l.search[1] === "/" && l.search.slice(1).split("/").length > 2) {
+        l.replace(
+          l.protocol +
+            "//" +
+            l.hostname +
+            (l.port ? ":" + l.port : "") +
+            l.pathname.slice(0, l.pathname.lastIndexOf("/") + 1) +
+            "?/" +
+            l.pathname
+              .slice(l.pathname.lastIndexOf("/") + 1)
+              .split("/")
+              .join("?/")
+        );
+      } else {
+        // Redirect any 404 to the home page
+        l.replace(
+          l.protocol + "//" + l.hostname + (l.port ? ":" + l.port : "") + "/"
+        );
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
