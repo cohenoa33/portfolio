@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Moon, Sun } from "lucide-react";
 
 const navItems = [
   { label: "Home", href: "#home" },
@@ -6,14 +7,18 @@ const navItems = [
   { label: "Contact", href: "#contact" }
 ];
 
-export function Navbar() {
+interface NavbarProps {
+  isDark: boolean;
+  onToggleDarkMode: () => void;
+}
+
+export function Navbar({ isDark, onToggleDarkMode }: NavbarProps) {
   const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
     const handleScroll = () => {
       const sections = ["home", "skills", "contact"];
       const scrollPosition = window.scrollY + 200;
-
 
       const isAtBottom =
         window.innerHeight + window.scrollY >=
@@ -56,7 +61,7 @@ export function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b-2 border-black">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-(--bg-primary) border-b-2 border-(--ring) transition-colors duration-200">
       <div className="px-6 md:px-12 py-6">
         <div className="flex items-center justify-between max-w-7xl mx-auto">
           {/* Logo/Name */}
@@ -78,7 +83,9 @@ export function Navbar() {
                     href={item.href}
                     onClick={(e) => handleClick(e, item.href)}
                     className={`block px-3 md:px-6 py-2 md:py-3 text-xs tracking-[0.3em] uppercase transition-all ${
-                      isActive ? "bg-black text-white" : "hover:bg-gray-100"
+                      isActive
+                        ? "bg-(--text-primary) text-(--bg-primary)"
+                        : "hover:opacity-50 hover:bg-(--interactive-bg-hover)"
                     }`}
                   >
                     <div className="flex items-center gap-2">
@@ -92,6 +99,15 @@ export function Navbar() {
               );
             })}
           </ul>
+
+          {/* Dark Mode Toggle */}
+          <button
+            onClick={onToggleDarkMode}
+            className="ml-0 md:ml-4 p-2 rounded-lg hover:opacity-80 transition-opacity"
+            aria-label="Toggle dark mode"
+          >
+            {isDark ? <Sun size={20} /> : <Moon size={20} />}
+          </button>
         </div>
       </div>
     </nav>

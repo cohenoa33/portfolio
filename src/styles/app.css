@@ -1,13 +1,40 @@
-
+/* Light mode defaults */
 @layer base {
+  :root {
+    --bg-primary: white;
+    --bg-secondary: black;
+    --text-primary: rgb(18, 18, 18);
+    --text-secondary: rgb(235, 235, 235);
+    --ring: #2e2e2e;
+    --interactive-bg-hover: rgba(0, 0, 0, 0.152);
+
+    --font-size: 16px;
+    --text-2xl: 1.5rem;
+    --text-xl: 1.25rem;
+    --text-lg: 1.125rem;
+    --text-base: 1rem;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+  }
+
+  /* Dark mode overrides */
+  .dark {
+    --bg-primary: black;
+    --bg-secondary: white;
+    --text-primary: rgb(235, 235, 235);
+    --text-secondary: rgb(18, 18, 18);
+    --ring: #dbdbdb;
+    --interactive-bg-hover: #2e2e2e;
+  }
+
   * {
-    border-color: var(--color-border);
-    outline-color: color-mix(in srgb, var(--color-ring) 50%, transparent);
+    border-color: var(--ring);
+    outline-color: color-mix(in srgb, var(--ring) 50%, transparent);
   }
 
   body {
-    background-color: var(--color-background);
-    color: var(--color-foreground);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
   }
 }
 
@@ -15,7 +42,7 @@
  * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
  */
 @layer base {
-  :where(:not(:has([class*=' text-']), :not(:has([class^='text-'])))) {
+  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
     h1 {
       font-size: var(--text-2xl);
       font-weight: var(--font-weight-medium);
