@@ -15,14 +15,14 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="px-6 md:px-12 py-24 transition-colors duration-200"
+      className="px-6 md:px-12 py-24 bg-(--bg-secondary) text-(--text-secondary) transition-colors duration-200"
     >
       <div className="max-w-6xl mx-auto">
         {/* Section Title */}
         <div className="mb-20">
           <div className="flex items-center gap-4 mb-4">
-            <span className="text-sm tracking-[0.3em] uppercase text-(--text-primary)/30">
-              03
+            <span className="text-sm tracking-[0.3em] uppercase text-(--text-secondary)/30">
+              04
             </span>
             <div className="h-px flex-1 bg-(--ring)"></div>
           </div>
@@ -79,7 +79,7 @@ export function Contact() {
                   href={item.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-center justify-between p-6 border-2 border-(--ring) text-(--text-primary) hover:bg-(--bg-secondary) hover:text-(--text-secondary) transition-all duration-300"
+                  className="group flex items-center justify-between p-6 border-2 border-(--ring) text-(--text-secondary) hover:bg-(--bg-primary) hover:text-(--text-primary) transition-all duration-300"
                 >
                   <div className="flex items-center gap-4">
                     {icons[item.icon]}

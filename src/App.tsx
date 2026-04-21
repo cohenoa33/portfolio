@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Hero, Contact, Skills, Navbar } from "./components";
+import React from "react";
+import { Hero, Contact, Skills, Navbar , Projects} from "./components";
 
 class App extends React.Component<{}, { isDark: boolean }> {
   constructor(props: {}) {
@@ -52,6 +52,7 @@ class App extends React.Component<{}, { isDark: boolean }> {
         />
         <Hero />
         <Skills />
+        <Projects />
         <Contact />
       </div>
     );

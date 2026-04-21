@@ -31,8 +31,6 @@ yarn-error.log*
 /src/data/work.ts   
 
 /src/images
-/public/resume.pdf
-/public/Noa_Rabin_Cohen_Full-Stack_Software_Engineer_Resume.pdf
 /public/Noa_Rabin_Cohen_-_Full-Stack_Software_Engineer.pdf
 
 # cache
