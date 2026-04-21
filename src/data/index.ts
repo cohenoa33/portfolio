@@ -1,5 +1,3 @@
-import { SiGithub, SiLinkedin } from "react-icons/si";
-
 
 export const about = [
   "Seattle-based, product-minded full-stack engineer who turns real-world needs into clear, useful applications and ships end-to-end features fast. Cares about UX, performance, and scalability as much as speed. Always up for a new domain and a team that moves from idea to release.",

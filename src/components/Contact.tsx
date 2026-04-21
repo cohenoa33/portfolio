@@ -1,13 +1,14 @@
 import { Mail, Phone, MapPin, ExternalLink } from "lucide-react";
 import { contactInfo, socialLinks } from "../data";
 import { ReactElement } from "react";
-import { SiGithub, SiLinkedin } from "react-icons/si";
+import { SiGithub } from "react-icons/si";
+import { FaLinkedin } from "react-icons/fa6";
 
 const icons: Record<string, ReactElement> = {
   Mail: <Mail className="w-6 h-6" />,
   Phone: <Phone className="w-6 h-6" />,
   MapPin: <MapPin className="w-6 h-6" />,
-  Linkedin: <SiLinkedin size={20} />,
+  Linkedin: <FaLinkedin size={20} />,
   Github: <SiGithub size={20} />
 };
 
