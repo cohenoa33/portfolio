@@ -3,7 +3,7 @@ import { about } from "../data";
 
 export function Hero() {
   const handleDownloadResume = () => {
-    // analytics only — no window.open, no fetch, no programmatic click
+    // analytics only - no window.open, no fetch, no programmatic click
     // e.g. track("resume_download");
   };
   const resumeUrl = "/Noa_Rabin_Cohen_-_Full-Stack_Software_Engineer.pdf";
@@ -22,7 +22,7 @@ export function Hero() {
               <h1 className="text-[clamp(3rem,20vw,10rem)] md:text-[clamp(3rem,12vw,10rem)] leading-[0.9] tracking-tighter ">
                 NOA
                 <span className="sr-only">
-                  Rabin Cohen — Full-Stack Engineer in Seattle
+                  Rabin Cohen - Full-Stack Engineer in Seattle
                 </span>
               </h1>
               <div className="overflow-hidden mb-2">
@@ -72,7 +72,16 @@ export function Hero() {
 
       {/* Scroll Indicator */}
       <div className="flex justify-center animate-bounce text-foreground">
-        <ArrowDown className="w-6 h-6" />
+        <ArrowDown
+          className="w-6 h-6"
+          onClick={(e) => {
+            e.preventDefault();
+            const element = document.getElementById("skills");
+            if (element) {
+              element.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
+        />
       </div>
     </section>
   );
